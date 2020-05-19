@@ -25,10 +25,144 @@
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 	  gtag('config', 'UA-134240024-1');
+
+
 	</script>
 <style>
+	<style>
 	body {font-family: Arial, Helvetica, sans-serif;}
+
+
+.modal {
+	  display: none;
+	  position: fixed;
+	  z-index: 99999;
+	  padding-top: 100px;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  height: 100%;
+	  overflow: auto;
+	  border-radius: 10px;
+	}	
+	.
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>	
+
 	</style>
+	<script type='text/javascript'>
+var isCtrl = false;
+document.onkeyup=function(e)
+{
+if(e.which == 17)
+isCtrl=false;
+}
+document.onkeydown=function(e)
+{
+if(e.which == 17)
+isCtrl=true;
+if((e.which == 85) || (e.which == 67) &amp;&amp; isCtrl == true)
+{
+// alert(&#8216;Keyboard shortcuts are cool!&#8217;);
+return false;
+}
+}
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
+
+</head>
+<body>
+
 </head>
 <body>
 <div class="wrapper">
@@ -47,7 +181,8 @@ I will not fear any evil, because you will be with me.</p>
 <a href="https://www.paypal.me/ingraynieris" target="_blank">Donate</a>
         </a>
 </div> </center>
-      <class="profile-card-social">
+
+ <class="profile-card-social">
         <a href="https://www.facebook.com/raynieris03" class="profile-card-social__item facebook" target="_blank">
           <span class="icon-font">
               <svg class="icon"><use xlink:href="#icon-facebook"></use></svg>
@@ -192,6 +327,7 @@ document.onmousedown = mousehandler;
 document.onmouseup = mousehandler;
 </script>
 
+     
 <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -203,6 +339,218 @@ document.onmouseup = mousehandler;
 </script>
 
 </head>
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenavt {
+  width: 400px;
+  position: fixed;
+  z-index: 2;
+  top: 1px;
+  left: 0px;
+  background: transparent;
+  overflow-x: hidden;
+  padding: 0px 0;
+.sidenavt a:hover {
+  color: #064579;
+}
+
+</style>
+
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  width: 45px;
+  position: fixed;
+  z-index: 1;
+  top: 120px;
+  left: 0px;
+  background: rgba(255, 255, 255, .7);
+  overflow-x: hidden;
+  padding: 0px 0;
+  border: 1px solid #888;
+}
+.sidenav a {
+  padding: 5px 5px 5px 0px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 2px;
+}
+
+@media screen and (max-height: 350px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenavr {
+  width: 50px;
+  position: fixed;
+  z-index: 1;
+  top: 150px;
+  right: 0px;
+  background: transparent;
+  overflow-x: hidden;
+  padding: 5px 0;
+}
+.sidenavr a {
+  padding: 12px 12px 12px 12px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenavr a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-right: 20px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 0px;
+}
+
+@media screen and (max-height: 350px) {
+  .sidenavr {padding-top: 15px;}
+  .sidenavr a {font-size: 18px;}
+}
+</style>
+
+
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 18px;
+  width: 18px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 5s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+
+
+
+<script type="text/javascript">
+		(function(document,navigator,standalone) {
+			// prevents links from apps from oppening in mobile safari
+			// this javascript must be the first script in your <head>
+			if ((standalone in navigator) && navigator[standalone]) {
+				var curnode, location=document.location, stop=/^(a|html)$/i;
+				document.addEventListener('click', function(e) {
+					curnode=e.target;
+					while (!(stop).test(curnode.nodeName)) {
+						curnode=curnode.parentNode;
+					}
+					// Conditions to do this only on links to your own app
+					// if you want all links, use if('href' in curnode) instead.
+					if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+						e.preventDefault();
+						location.href = curnode.href;
+					}
+				},false);
+			}
+		})(document,window.navigator,'standalone');
+	</script>
+	
+	
+	
+<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-134240024-1');
+
+
+	</script>
 
 <!-- Modal -->
   <div class="modal fade" id="myModalchao"> 
@@ -218,9 +566,7 @@ document.onmouseup = mousehandler;
 
 <div class="modal-body">
      <center>
-<h6>ICCID</h6>
-  </span>
-</p>
+ <h5><b>ICCID</b></h5>
 <script src="dist/clipboard.min.js"></script>
 <!DOCTYPE html>
 <html lang="en">
@@ -253,12 +599,9 @@ document.onmouseup = mousehandler;
     </script>
 </body>
 </html>
-
-<p>
-
      <center>
 </p><a href="https://wa.me/18098647903?text=Gracias%20por%20comunicarte%20con%20Ing%20Raynieris!%0AC%C3%B3mo%20podemos%20servirte?" target="_blank">Contact 
-<p>
+
   </script>
   <script type="text/javascript">
 $('#myModalchao').modal('show');
@@ -270,3 +613,103 @@ $('#myModalchao').modal('show');
 <br>
 <script>
 </body>
+<script>
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id))
+			return;
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId: '2372543649442183',
+			status: true,
+			xfbml: true,
+			cookie: true
+		});
+	};
+  </script>
+  <script type="text/javascript">
+$('#myModalchao').modal('show');
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/index.js"></script>
+<!-- <script>
+	var modal = document.getElementById('myModal');
+	
+	var btn = document.getElementById("myBtn");
+	
+	var span = document.getElementsByClassName("close")[0];
+	 
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
+	
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+	
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+		modal.style.display = "none";
+	  }
+	}
+</script> -->
+<script>
+	function someFunction(){
+		var modal = document.getElementById('myModal');
+		var btn = document.getElementById("myBtn");
+		var span = document.getElementsByClassName("close")[0];
+		
+		span.onclick = function() {
+			modal.classList.remove('show');
+		}
+		btn.onclick = function() {
+			modal.classList.add('show');
+		}
+
+		btn.click();
+	} 
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.16.0/jquery.min.js"></script>
+<script>
+document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+$(document).keypress("u",function(e) {
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+});
+</script>
+
+
+    </script>
+    <!-- //// -->
+
+
+
+
+
+
+	
+</body>
+</html>
