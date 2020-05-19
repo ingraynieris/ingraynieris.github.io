@@ -220,14 +220,38 @@ document.onmouseup = mousehandler;
   </span>
     <div>
 </p>
-  <center>
-<h5><b>ICCID</b></h5>
-</p>
-89014103270421600461
-</p>
-89014103270421600107
-</p>
-89014103270421600446
+<script src="dist/clipboard.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>constructor-selector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 1. Define some markup -->
+<center>
+    <button class="btn" data-clipboard-text="89014103270421600107">89014103270421600107</button>
+<center>
+    <button class="btn" data-clipboard-text="89014103270421600446">89014103270421600446</button>
+<center>
+    <button class="btn" data-clipboard-text="89014103270421600461">89014103270421600461</button>
+
+    <!-- 2. Include library -->
+    <script src="../clipboard.min.js"></script>
+
+    <!-- 3. Instantiate clipboard by passing a string selector -->
+    <script>
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
+</body>
+</html>
 
 <p>
 
