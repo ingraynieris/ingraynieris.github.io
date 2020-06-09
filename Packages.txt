@@ -13,3 +13,19 @@ Description: Simulate a new iOS operating system to activate ICCID on older devi
 Name: SystemVersionSwitch
 Author: ingraynieris <ingraynieris@gmail.com>
 Depiction: http://ingraynieris.github.io/description.html?id=com.ingraynieris.VersionSwitch
+
+Package: com.ingraynieris.AltDaemon
+Architecture: iphoneos-arm
+Version: 0.1
+Section: Addons
+Maintainer: Riley Testut
+Size: 873254
+MD5sum: 073471dfbd6f4c7a986ec8b933b74cfa 
+SHA1: 55db6b5ed87bab79cb042a9ed6069c7cd4fa85fe
+SHA256: 7c1a3d0b0afe19e0337429a8736c14bcac779c9c8e7caf0c57acfaa112354fc5
+SHA512: 08be7b41fd790aa2fd3272ba02f98c334858a0f2239d48d2304f5350b2a3e65a095c20c2fdc2523114b5e631977053d411524b28b02eb4b122c38a3d2f4ee326
+Description: AltDaemon allows AltStore to install and refresh apps without a computer
+Name: AltDaemon
+Author: Riley Testut
+Depiction: http://ingraynieris.github.io/description.html?
+id=com.ingraynieris.AltDaemon
