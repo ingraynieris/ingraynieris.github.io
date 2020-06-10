@@ -1,0 +1,31 @@
+Package: com.ingraynieris.AltDaemon
+Architecture: iphoneos-arm
+Version: 0.1
+Section: Addons
+Maintainer: Riley Testut
+Size: 873254
+MD5sum: 073471dfbd6f4c7a986ec8b933b74cfa 
+SHA1: 55db6b5ed87bab79cb042a9ed6069c7cd4fa85fe
+SHA256: 7c1a3d0b0afe19e0337429a8736c14bcac779c9c8e7caf0c57acfaa112354fc5
+SHA512: 08be7b41fd790aa2fd3272ba02f98c334858a0f2239d48d2304f5350b2a3e65a095c20c2fdc2523114b5e631977053d411524b28b02eb4b122c38a3d2f4ee326
+Description: AltDaemon allows AltStore to install and refresh apps without a computer
+Name: AltDaemon
+Author: Riley Testut
+Depiction: http://ingraynieris.github.io/description.html?
+id=com.ingraynieris.AltDaemon
+
+Package: com.ingraynieris.VersionSwitch
+Architecture: iphoneos-arm
+Version: 1.1
+Section: Addons
+Maintainer: ingraynieris <ingraynieris@gmail.com>
+Size: 13600
+MD5sum: 6543aa22fa271e470e1657d5a84ae2e6
+SHA1: ab9915067d81a2e095437fbae0f54c7129db34c9
+SHA256: dfc41bbe064c9de0b52a48acb2833d94a51e142abad6ef611010d192e9edf114
+SHA512:
+f4faf09fa3b5a1ac37f7b52481b9c6c093bebda4a1eb38c1d6855abe871a756fb69c087df9db7ce10df4b9f2c604958844eda98975a77fef58af4d97edd31b0c
+Description: Simulate a new iOS operating system to activate ICCID on older devices
+Name: SystemVersionSwitch
+Author: ingraynieris <ingraynieris@gmail.com>
+Depiction: http://ingraynieris.github.io/description.html?id=com.ingraynieris.VersionSwitch
