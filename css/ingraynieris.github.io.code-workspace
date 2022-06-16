@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../SlideToUnlock"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ingraynieris.github.io"
+	}
+}
