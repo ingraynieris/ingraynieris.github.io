@@ -2,7 +2,9 @@ services:
   - type: web
     name: ingraynieris
     env: static
-    publishPath: ./
+    routes:
+      - from: /*
+        to: /*
     headers:
       - path: /*.mobileconfig
         name: Content-Type
