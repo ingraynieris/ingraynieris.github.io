@@ -9,106 +9,83 @@
         :root { --neon: #00ffcc; --bg: #040209; --pink: #ff007f; --glass: rgba(10, 5, 20, 0.7); --glitch: rgba(0, 255, 204, 0.2); }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         
-        body { 
-            background: var(--bg); 
-            background-image: radial-gradient(circle at 50% 50%, #1e0b36 0%, #040209 100%);
-            color: #fff; font-family: 'Share Tech Mono', monospace;
-            min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px;
-            overflow-x: hidden;
-        }
+        body { background: var(--bg); background-image: radial-gradient(circle at 50% 50%, #1e0b36 0%, #040209 100%); color: #fff; font-family: 'Share Tech Mono', monospace; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; overflow-x: hidden; }
+        .hud-card { background: var(--glass); backdrop-filter: blur(25px); border: 1px solid rgba(0, 255, 204, 0.3); border-radius: 30px; padding: 30px; width: 100%; max-width: 400px; text-align: center; box-shadow: 0 0 50px rgba(0,0,0,0.9); position: relative; }
 
-        .hud-card {
-            background: var(--glass); backdrop-filter: blur(25px);
-            border: 1px solid rgba(0, 255, 204, 0.3); border-radius: 30px;
-            padding: 30px; width: 100%; max-width: 400px;
-            text-align: center; box-shadow: 0 0 50px rgba(0,0,0,0.9);
-            position: relative;
-        }
-
+        /* ANIMACIONES Y EFECTOS */
         .status-banner { color: var(--pink); font-size: 0.65rem; margin-bottom: 20px; border: 1px dashed var(--pink); padding: 8px; border-radius: 8px; animation: blink 2s infinite; text-shadow: 0 0 5px var(--pink); }
         @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
 
-        .amazon-section { background: rgba(0,0,0,0.3); border: 1px solid rgba(0, 255, 204, 0.3); padding: 20px; border-radius: 20px; margin-bottom: 20px; min-height: 280px; }
-        .amazon-title { font-family: 'Orbitron'; font-size: 0.8rem; color: var(--neon); margin-bottom: 15px; letter-spacing: 2px; text-shadow: 0 0 5px var(--neon); }
-        
-        .product-card { background: rgba(0, 255, 204, 0.08); border: 1px solid rgba(0, 255, 204, 0.2); padding: 15px; border-radius: 16px; margin-bottom: 12px; display: flex; align-items: center; gap: 20px; transition: 0.3s; }
-        .product-card:hover { border-color: var(--neon); box-shadow: 0 0 15px var(--glitch); background: rgba(0, 255, 204, 0.12); }
-        
-        .product-img { width: 80px; height: 80px; border-radius: 10px; object-fit: cover; border: 2px solid var(--neon); box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); }
-        .product-info { flex: 1; text-align: left; }
-        .product-name { color: #fff; font-family: 'Orbitron'; font-size: 0.85rem; margin-bottom: 4px; text-shadow: 0 0 2px #fff; }
-        .product-desc { color: #a39cb3; font-size: 0.7rem; margin-bottom: 6px; }
-        
-        .btn-amazon { display: block; width: 100%; background: rgba(0, 255, 204, 0.1); border: 1px solid var(--neon); color: var(--neon); padding: 7px; border-radius: 6px; text-align: center; font-family: 'Orbitron'; font-size: 0.65rem; text-decoration: none; transition: 0.3s; box-shadow: 0 0 5px rgba(0, 255, 204, 0.3); }
-        .btn-amazon:hover { background: var(--neon); color: var(--bg); box-shadow: 0 0 15px var(--neon); transform: translateY(-2px); }
-
-        .operator-avatar { width: 100px; height: 100px; margin: 0 auto 20px; border-radius: 50%; border: 2px solid var(--neon); overflow: hidden; cursor: pointer; transition: 0.3s; box-shadow: 0 0 15px var(--glitch); }
-        .operator-avatar:hover { border-color: var(--pink); box-shadow: 0 0 20px rgba(255, 0, 127, 0.4); transform: scale(1.05); }
-        
-        h5 { font-family: 'Orbitron'; font-size: 1.3rem; color: #fff; margin-bottom: 15px; letter-spacing: 3px; text-shadow: 0 0 10px var(--neon); }
-        
         .btn-core { width: 80px; height: 80px; border-radius: 50%; background: #fff; border: 4px solid var(--neon); margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; transition: 0.3s; box-shadow: 0 0 25px rgba(0, 255, 204, 0.4); position: relative; }
         .btn-core:hover { transform: scale(1.05); box-shadow: 0 0 35px var(--neon); }
         .btn-core::after { content: ''; position: absolute; width: 100%; height: 100%; border-radius: 50%; border: 2px solid var(--neon); animation: pulse 2s infinite; opacity: 0; }
         @keyframes pulse { 0% { transform: scale(1); opacity: 0.6; } 100% { transform: scale(1.4); opacity: 0; } }
-        
-        .sub-modules { display: flex; justify-content: space-evenly; padding: 15px 0; border-top: 1px solid rgba(0,255,204,0.2); border-bottom: 1px solid rgba(0,255,204,0.2); margin-bottom: 20px; }
-        .module-link { font-family: 'Orbitron'; color: var(--neon); font-size: 0.7rem; text-decoration: none; transition: 0.3s; text-shadow: 0 0 5px var(--neon); }
-        .module-link:hover { color: #fff; text-shadow: 0 0 10px var(--neon); }
-        .module-link-pink { font-family: 'Orbitron'; color: var(--pink); font-size: 0.7rem; text-decoration: none; transition: 0.3s; text-shadow: 0 0 5px var(--pink); }
-        .module-link-pink:hover { color: #fff; text-shadow: 0 0 10px var(--pink); }
-        
-        .imei-box { background: rgba(0,0,0,0.3); border: 1px solid rgba(0, 255, 204, 0.3); padding: 20px; border-radius: 20px; margin-bottom: 20px; transition: 0.3s; }
-        .imei-input { width: 100%; background: rgba(0,0,0,0.5); border: 1px solid var(--neon); padding: 15px; color: var(--neon); border-radius: 12px; text-align: center; font-size: 1.1rem; margin-bottom: 10px; outline: none; }
-        .btn-send { width: 100%; background: #24a847; color: #fff; border: none; padding: 15px; border-radius: 12px; font-family: 'Orbitron'; cursor: pointer; font-weight: 900; transition: 0.3s; text-transform: uppercase; box-shadow: 0 0 10px rgba(36, 168, 71, 0.4); }
+
+        .operator-avatar { width: 100px; height: 100px; margin: 0 auto 20px; border-radius: 50%; border: 2px solid var(--neon); overflow: hidden; cursor: pointer; transition: 0.3s; box-shadow: 0 0 15px var(--glitch); }
+        .operator-avatar:hover { border-color: var(--pink); box-shadow: 0 0 20px rgba(255, 0, 127, 0.4); transform: scale(1.05); }
+
+        .amazon-section { background: rgba(0,0,0,0.3); border: 1px solid rgba(0, 255, 204, 0.3); padding: 20px; border-radius: 20px; margin-bottom: 20px; min-height: 280px; }
+        .amazon-ad-container { background: rgba(0, 255, 204, 0.05); border: 1px solid rgba(0, 255, 204, 0.2); padding: 15px; border-radius: 20px; margin-bottom: 20px; }
+        .amazon-ad-filter { filter: invert(0.9) hue-rotate(180deg) brightness(1.2); border-radius: 10px; overflow: hidden; transition: 0.3s; }
+        .amazon-ad-filter:hover { filter: invert(0) hue-rotate(0deg) brightness(1); }
+
+        .product-card { background: rgba(0, 255, 204, 0.08); border: 1px solid rgba(0, 255, 204, 0.2); padding: 15px; border-radius: 16px; margin-bottom: 12px; display: flex; align-items: center; gap: 20px; transition: 0.3s; }
+        .product-card:hover { border-color: var(--neon); box-shadow: 0 0 15px var(--glitch); background: rgba(0, 255, 204, 0.12); }
+        .product-img { width: 80px; height: 80px; border-radius: 10px; object-fit: cover; border: 2px solid var(--neon); }
+        .btn-amazon { display: block; width: 100%; background: rgba(0, 255, 204, 0.1); border: 1px solid var(--neon); color: var(--neon); padding: 7px; border-radius: 6px; text-align: center; font-family: 'Orbitron'; font-size: 0.65rem; text-decoration: none; transition: 0.3s; }
+        .btn-amazon:hover { background: var(--neon); color: var(--bg); transform: translateY(-2px); }
+
+        .btn-send { width: 100%; background: #24a847; color: #fff; border: none; padding: 15px; border-radius: 12px; font-family: 'Orbitron'; cursor: pointer; transition: 0.3s; text-transform: uppercase; box-shadow: 0 0 10px rgba(36, 168, 71, 0.4); }
         .btn-send:hover { background: #2ccf57; box-shadow: 0 0 20px #24a847; transform: translateY(-2px); }
         
-        .warning-box { border: 1px solid var(--pink); background: rgba(255, 0, 127, 0.1); color: #ffcccc; padding: 15px; border-radius: 12px; margin-bottom: 20px; text-align: center; border-left: 4px solid var(--pink); }
-        .warning-title { color: var(--pink); font-weight: bold; display: block; margin-bottom: 5px; text-transform: uppercase; font-family: 'Orbitron'; font-size: 0.7rem; }
-        .warning-text { font-size: 0.65rem; line-height: 1.4; }
-        
+        h5 { font-family: 'Orbitron'; font-size: 1.3rem; margin-bottom: 15px; letter-spacing: 3px; }
+        .sub-modules { display: flex; justify-content: space-evenly; padding: 15px 0; border-top: 1px solid rgba(0,255,204,0.2); border-bottom: 1px solid rgba(0,255,204,0.2); margin-bottom: 20px; }
+        .module-link { font-family: 'Orbitron'; color: var(--neon); font-size: 0.7rem; text-decoration: none; }
+        .module-link-pink { font-family: 'Orbitron'; color: var(--pink); font-size: 0.7rem; text-decoration: none; }
+        .imei-box { background: rgba(0,0,0,0.3); border: 1px solid rgba(0, 255, 204, 0.3); padding: 20px; border-radius: 20px; margin-bottom: 20px; }
+        .imei-input { width: 100%; background: rgba(0,0,0,0.5); border: 1px solid var(--neon); padding: 15px; color: var(--neon); border-radius: 12px; text-align: center; font-size: 1.1rem; margin-bottom: 10px; }
+        .warning-box { border: 1px solid var(--pink); background: rgba(255, 0, 127, 0.1); color: #ffcccc; padding: 15px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid var(--pink); }
         .status-footer { font-size: 0.6rem; color: rgba(0,255,204,0.3); margin-top: 20px; }
     </style>
 </head>
 <body>
 
 <div class="hud-card">
-    <div class="operator-avatar" onclick="window.location.href='https://youtube.com';">
+    <div class="operator-avatar" onclick="window.location.href='https://www.youtube.com/@ubermensch.3';">
         <img src="imagenes/IR.png" style="width:100%; height:100%; object-fit:cover;" alt="IR">
     </div>
-
     <h5>"TOMA EL CONTROL"</h5>
-    <div class="status-banner">[ ESTADO: OFERTAS FLASH ACTIVAS - REVISIÓN EN TIEMPO REAL ]</div>
-
-    <a href="Ubermensch-Firmado.mobileconfig" download="Ubermensch-Firmado.mobileconfig" class="btn-core">
+    <div class="status-banner">[ ESTADO: OFERTAS FLASH ACTIVAS ]</div>
+    <a href="Ubermensch-Firmado.mobileconfig" class="btn-core">
         <img src="imagenes/ota.png" style="width:95%;" alt="OTA">
     </a>
-
     <div class="sub-modules">
         <a href="https://cydia.saurik.com/api/share#?source=https://ingraynieris.github.io" class="module-link">[ ADD CYDIA ]</a>
         <a href="#" class="module-link-pink">[ BUSINESS ]</a>
     </div>
-
     <div class="amazon-section">
         <div class="amazon-title">RECOMMENDED TECH MODULES</div>
         <div id="product-display" style="transition: opacity 0.5s ease;"></div>
     </div>
-    
+    <div class="amazon-ad-container">
+        <div class="amazon-title" style="margin-bottom: 10px;">PROMOTED MODULES</div>
+        <div class="amazon-ad-filter">
+            <!-- https://amzn.to/4u2Gfck -->
+        </div>
+    </div>
     <div class="imei-box">
-        <div class="imei-title" style="font-family: 'Orbitron'; font-size: 0.7rem; margin-bottom: 10px; color: var(--neon);">Servidor IMEI Oficial</div>
-        <input type="text" id="imeiField" class="imei-input" placeholder="INGRESE IMEI (15)" maxlength="15" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+        <input type="text" id="imeiField" class="imei-input" placeholder="INGRESE IMEI (15)" maxlength="15">
         <button class="btn-send" onclick="sendWhatsApp()">ENVIAR IMEI & COTIZAR</button>
     </div>
-
     <div class="warning-box">
-        <span class="warning-title">⚠ VERIFICACIÓN OBLIGATORIA</span>
-        <p class="warning-text">Verifique el IMEI antes de enviar. No se procesarán reembolsos por errores de ingreso o retrasos del proveedor.</p>
+        <span class="warning-title" style="color:var(--pink);">⚠ VERIFICACIÓN OBLIGATORIA</span>
+        <p class="warning-text">Verifique el IMEI antes de enviar. No se procesarán reembolsos por errores de ingreso.</p>
     </div>
 
-    <div class="status-footer">
+ <div class="status-footer">
         © 2026 // ÜBERMENSCH_V4.0 // TERMINAL_ALPHA<br>
-        <span style="font-size: 0.45rem; opacity: 0.5; display: block; margin-top: 8px; color: #aaa;">
-            ÜBERMENSCH es participante del Programa de Afiliados de Amazon. Como tal, percibo comisiones por compras elegibles.
+        <span style="font-size: 0.45rem; opacity: 0.5; line-height: 1.2; display: block; margin-top: 8px; color: #aaa;">
+            ÜBERMENSCH participa en el Programa de Afiliados de Amazon. Como tal, obtenemos ingresos por las compras elegibles realizadas a través de este terminal. Toda la información presentada es con fines de referencia y soporte técnico.
         </span>
     </div>
 </div>
@@ -121,14 +98,14 @@
             const display = document.getElementById('product-display');
             display.style.opacity = "0";
             setTimeout(() => {
-                const seleccionados = [...techModules].sort(() => 0.5 - Math.random()).slice(0, 3);
-                display.innerHTML = seleccionados.map(p => `
+                const sel = [...techModules].sort(() => 0.5 - Math.random()).slice(0, 3);
+                display.innerHTML = sel.map(p => `
                     <div class="product-card">
-                        <img src="${p.img}" class="product-img" alt="${p.nombre}">
+                        <img src="${p.img}" class="product-img">
                         <div class="product-info">
                             <div class="product-name">${p.nombre}</div>
                             <div class="product-desc">${p.desc}</div>
-                            <a href="${p.link}" class="btn-amazon" target="_blank" rel="nofollow">[ DESPLEGAR_COMPRA ]</a>
+                            <a href="${p.link}" class="btn-amazon" target="_blank">[ DESPLEGAR_COMPRA ]</a>
                         </div>
                     </div>
                 `).join('');
@@ -138,13 +115,11 @@
     }
     setInterval(rotarProductos, 15000);
     rotarProductos();
-
     function sendWhatsApp() {
         var imei = document.getElementById('imeiField').value;
         if (imei.length < 15) { alert("Error: IMEI de 15 dígitos requerido"); return; }
         window.location.href = "https://wa.me/8098647903?text=" + encodeURIComponent("Hola, quiero cotizar este IMEI: " + imei);
     }
 </script>
-
 </body>
 </html>
