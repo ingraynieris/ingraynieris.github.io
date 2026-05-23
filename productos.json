@@ -12,15 +12,51 @@
     "link": "https://a.co/d/01lzk2lM"
   },
   {
-    "nombre": "CORE_CHARGER V2.0",
-    "desc": "Cyberpunk Wireless Pad",
-    "img": "https://m.media-amazon.com/images/I/61+Q+5Zp8TL._AC_SL1500_.jpg",
-    "link": "https://amzn.to/3EXAMPLE"
+    "nombre": "Apple AirPods 4",
+    "desc": "Cancelación de ruido activa",
+    "img": "https://m.media-amazon.com/images/I/61iBtxCUabL._AC_SX679_.jpg",
+    "link": "https://a.co/d/0jgfalSz"
   },
   {
-    "nombre": "CYBER_POWERBANK",
-    "desc": "High Capacity Power Cell",
-    "img": "https://m.media-amazon.com/images/I/71R2Hw45-fL._AC_SL1500_.jpg",
-    "link": "https://amzn.to/3EXAMPLE"
+    "nombre": "Apple AirTag (2ª generación) ",
+    "desc": "Rastreador para llavero, cartera y más",
+    "img": "https://m.media-amazon.com/images/I/61Qd9Z9caRL._AC_UY436_FMwebp_QL65_.jpg",
+    "link": "https://a.co/d/0c2ltMbn"
+  },
+  {
+    "nombre": "Amazon Fire TV Stick 4K Max",
+    "desc": "TV con tecnología de IA",
+    "img": "https://m.media-amazon.com/images/I/617-2QI09-L._AC_SY879_.jpg",
+    "link": "https://a.co/d/0g4jKxDa"
+  },
+  {
+    "nombre": "Apple AirPods 4",
+    "desc": "Cancelación de ruido activa",
+    "img": "https://m.media-amazon.com/images/I/61iBtxCUabL._AC_SX679_.jpg",
+    "link": "https://a.co/d/0jgfalSz"
+  },
+  {
+    "nombre": "Apple AirTag (2ª generación) ",
+    "desc": "Rastreador para llavero, cartera y más",
+    "img": "https://m.media-amazon.com/images/I/61Qd9Z9caRL._AC_UY436_FMwebp_QL65_.jpg",
+    "link": "https://a.co/d/0c2ltMbn"
+    },
+  {
+    "nombre": "Apple AirPods Max 2",
+    "desc": "Cancelación de ruido activa",
+    "img": "https://m.media-amazon.com/images/I/71umw2cCkOL._AC_SX679_.jpg",
+    "link": "https://a.co/d/01lzk2lM"
+  },
+  {
+    "nombre": "Apple AirPods 4",
+    "desc": "Cancelación de ruido activa",
+    "img": "https://m.media-amazon.com/images/I/61iBtxCUabL._AC_SX679_.jpg",
+    "link": "https://a.co/d/0jgfalSz"
+  },
+  {
+    "nombre": "Apple AirTag (2ª generación) ",
+    "desc": "Rastreador para llavero, cartera y más",
+    "img": "https://m.media-amazon.com/images/I/61Qd9Z9caRL._AC_UY436_FMwebp_QL65_.jpg",
+    "link": "https://a.co/d/0c2ltMbn"
   }
 ]
