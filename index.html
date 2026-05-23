@@ -55,20 +55,18 @@
         .sub-modules { display: flex; justify-content: space-evenly; padding: 15px 0; border-top: 1px solid rgba(0,255,204,0.2); border-bottom: 1px solid rgba(0,255,204,0.2); margin-bottom: 20px; }
         .module-link { font-family: 'Orbitron'; color: var(--neon); font-size: 0.7rem; text-decoration: none; transition: 0.3s; text-shadow: 0 0 5px var(--neon); }
         .module-link:hover { color: #fff; text-shadow: 0 0 10px var(--neon); }
-        
-        /* Efecto Rosa para Business */
         .module-link-pink { font-family: 'Orbitron'; color: var(--pink); font-size: 0.7rem; text-decoration: none; transition: 0.3s; text-shadow: 0 0 5px var(--pink); }
         .module-link-pink:hover { color: #fff; text-shadow: 0 0 10px var(--pink); }
         
         .imei-box { background: rgba(0,0,0,0.3); border: 1px solid rgba(0, 255, 204, 0.3); padding: 20px; border-radius: 20px; margin-bottom: 20px; transition: 0.3s; }
-        .imei-box:focus-within { border-color: var(--neon); box-shadow: 0 0 15px var(--glitch); }
-        .imei-input { width: 100%; background: rgba(0,0,0,0.5); border: 1px solid var(--neon); padding: 15px; color: var(--neon); border-radius: 12px; text-align: center; font-size: 1.1rem; margin-bottom: 10px; transition: 0.3s; outline: none; }
+        .imei-input { width: 100%; background: rgba(0,0,0,0.5); border: 1px solid var(--neon); padding: 15px; color: var(--neon); border-radius: 12px; text-align: center; font-size: 1.1rem; margin-bottom: 10px; outline: none; }
         .btn-send { width: 100%; background: #24a847; color: #fff; border: none; padding: 15px; border-radius: 12px; font-family: 'Orbitron'; cursor: pointer; font-weight: 900; transition: 0.3s; text-transform: uppercase; box-shadow: 0 0 10px rgba(36, 168, 71, 0.4); }
         .btn-send:hover { background: #2ccf57; box-shadow: 0 0 20px #24a847; transform: translateY(-2px); }
         
-        .system-log { background: rgba(0,0,0,0.5); padding: 10px; border-radius: 10px; font-size: 0.6rem; color: var(--neon); text-align: left; margin: 15px 0; font-family: monospace; border: 1px solid rgba(0,255,204,0.2); }
-        .btn-support { display: inline-block; color: var(--neon); font-size: 0.7rem; text-decoration: none; transition: 0.3s; text-shadow: 0 0 5px var(--neon); letter-spacing: 1px; }
-        .btn-support:hover { color: #fff; text-shadow: 0 0 10px var(--neon); transform: scale(1.05); }
+        .warning-box { border: 1px solid var(--pink); background: rgba(255, 0, 127, 0.1); color: #ffcccc; padding: 15px; border-radius: 12px; margin-bottom: 20px; text-align: center; border-left: 4px solid var(--pink); }
+        .warning-title { color: var(--pink); font-weight: bold; display: block; margin-bottom: 5px; text-transform: uppercase; font-family: 'Orbitron'; font-size: 0.7rem; }
+        .warning-text { font-size: 0.65rem; line-height: 1.4; }
+        
         .status-footer { font-size: 0.6rem; color: rgba(0,255,204,0.3); margin-top: 20px; }
     </style>
 </head>
@@ -93,24 +91,25 @@
 
     <div class="amazon-section">
         <div class="amazon-title">RECOMMENDED TECH MODULES</div>
-        <div id="product-display"></div>
+        <div id="product-display" style="transition: opacity 0.5s ease;"></div>
     </div>
     
     <div class="imei-box">
+        <div class="imei-title" style="font-family: 'Orbitron'; font-size: 0.7rem; margin-bottom: 10px; color: var(--neon);">Servidor IMEI Oficial</div>
         <input type="text" id="imeiField" class="imei-input" placeholder="INGRESE IMEI (15)" maxlength="15" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
         <button class="btn-send" onclick="sendWhatsApp()">ENVIAR IMEI & COTIZAR</button>
     </div>
 
-    <div class="system-log">
-        > INICIALIZANDO MÓDULOS... OK<br>
-        > CONEXIÓN CON SERVIDOR AMAZON... OK<br>
-        > SINCRONIZACIÓN DE PRECIOS... COMPLETADA
+    <div class="warning-box">
+        <span class="warning-title">⚠ VERIFICACIÓN OBLIGATORIA</span>
+        <p class="warning-text">Verifique el IMEI antes de enviar. No se procesarán reembolsos por errores de ingreso o retrasos del proveedor.</p>
     </div>
 
-    <a href="https://wa.me/8098647903?text=Hola, tengo una pregunta sobre un producto de la Terminal" class="btn-support">[ CONTACTAR OPERADOR ]</a>
-
     <div class="status-footer">
-        © 2026 // ÜBERMENSCH_V4.0 // TERMINAL_ALPHA
+        © 2026 // ÜBERMENSCH_V4.0 // TERMINAL_ALPHA<br>
+        <span style="font-size: 0.45rem; opacity: 0.5; display: block; margin-top: 8px; color: #aaa;">
+            ÜBERMENSCH es participante del Programa de Afiliados de Amazon. Como tal, percibo comisiones por compras elegibles.
+        </span>
     </div>
 </div>
 
@@ -120,21 +119,24 @@
             const respuesta = await fetch('productos.json');
             const techModules = await respuesta.json();
             const display = document.getElementById('product-display');
-            const seleccionados = [...techModules].sort(() => 0.5 - Math.random()).slice(0, 3);
-            
-            display.innerHTML = seleccionados.map(p => `
-                <div class="product-card">
-                    <img src="${p.img}" class="product-img" alt="${p.nombre}">
-                    <div class="product-info">
-                        <div class="product-name">${p.nombre}</div>
-                        <div class="product-desc">${p.desc}</div>
-                        <a href="${p.link}" class="btn-amazon" target="_blank">[ DESPLEGAR_COMPRA ]</a>
+            display.style.opacity = "0";
+            setTimeout(() => {
+                const seleccionados = [...techModules].sort(() => 0.5 - Math.random()).slice(0, 3);
+                display.innerHTML = seleccionados.map(p => `
+                    <div class="product-card">
+                        <img src="${p.img}" class="product-img" alt="${p.nombre}">
+                        <div class="product-info">
+                            <div class="product-name">${p.nombre}</div>
+                            <div class="product-desc">${p.desc}</div>
+                            <a href="${p.link}" class="btn-amazon" target="_blank" rel="nofollow">[ DESPLEGAR_COMPRA ]</a>
+                        </div>
                     </div>
-                </div>
-            `).join('');
+                `).join('');
+                display.style.opacity = "1";
+            }, 300);
         } catch (e) { console.error(e); }
     }
-    setInterval(rotarProductos, 10000);
+    setInterval(rotarProductos, 15000);
     rotarProductos();
 
     function sendWhatsApp() {
