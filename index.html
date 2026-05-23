@@ -5,53 +5,278 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="google-site-verification" content="nI1viW5j60gr4iLN3oail8c0VlUMCmwL9guqpVF0lBc" />
-    <title>Ing Raynieris</title>
-    <meta property="og:locale" content="es_ES" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image:secure_url" content="images/thumnail.png"/>
+    <title>Übermensch | Override Terminal</title>
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.16.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134240024-1"></script>
-    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Fondo animado estilo escáner táctico */
+        body {
+            background: #040209;
+            background-image: 
+                radial-gradient(circle at 50% 30%, #1e0b36 0%, #040209 80%),
+                linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+            background-size: 100% 100%, 100% 4px, 6px 100%;
+            font-family: 'Share Tech Mono', monospace;
+            color: #00ffcc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        /* Línea de escaneo láser */
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 0%, rgba(0, 255, 204, 0.05) 10%, rgba(18, 16, 16, 0) 11%);
+            width: 100%; height: 100%;
+            z-index: 10;
+            pointer-events: none;
+            animation: scan 6s linear infinite;
+        }
+
+        @keyframes scan {
+            0% { background-position: 0 0; }
+            100% { background-position: 0 100vh; }
+        }
+
+        /* Interfaz HUD Traslúcida */
+        .hud-card {
+            background: rgba(10, 5, 20, 0.8);
+            border: 1px solid #00ffcc;
+            box-shadow: 0 0 30px rgba(0, 255, 204, 0.15), inset 0 0 20px rgba(0, 255, 204, 0.1);
+            border-radius: 20px;
+            padding: 40px 24px;
+            max-width: 360px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
+        }
+
+        .hud-card::after {
+            content: "SYSTEM: READY";
+            position: absolute;
+            top: 8px; left: 15px;
+            font-size: 0.6rem;
+            color: rgba(0, 255, 204, 0.5);
+            letter-spacing: 2px;
+        }
+
+        /* Bloque Superior del Operador */
+        .operator-block {
+            margin-bottom: 25px;
+            display: inline-block;
+            position: relative;
+        }
+
+        /* Modificado para asegurar clics directos */
+        .operator-avatar {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 12px auto;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        /* El anillo giratorio ahora ignora los clics del mouse para no estorbar */
+        .operator-avatar::before {
+            content: '';
+            position: absolute;
+            top: -4px; left: -4px; right: -4px; bottom: -4px;
+            border: 2px dashed #00ffcc;
+            border-radius: 50%;
+            z-index: 1;
+            pointer-events: none; 
+            animation: rotate 20s linear infinite;
+        }
+        
+        .operator-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            padding: 4px;
+            background: #0a0514;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Botón HUD de YouTube estilo Sci-Fi */
+        .youtube-hud-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 0, 127, 0.1);
+            border: 1px solid #ff007f;
+            padding: 4px 14px;
+            border-radius: 20px;
+            color: #ffffff;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px rgba(255, 0, 127, 0.3);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .youtube-hud-link:active {
+            transform: scale(0.95);
+            background: #ff007f;
+            box-shadow: 0 0 20px #ff007f;
+        }
+        .youtube-hud-link svg {
+            fill: currentColor;
+            width: 12px;
+            height: 12px;
+        }
+
+        @keyframes rotate {
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Títulos y textos */
+        h5 {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            font-size: 1.4rem;
+            letter-spacing: 3px;
+            color: #ffffff;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px #00ffcc;
+            margin-bottom: 12px;
+        }
+        
+        p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #a39cb3;
+            margin-bottom: 35px;
+            padding: 0 5px;
+        }
+
+        /* Botón de Bloqueo OTA */
+        .core-trigger {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 35px;
+            position: relative;
+        }
+        .btn-core {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            background: #ffffff;
+            border: 4px solid #00ffcc;
+            box-shadow: 0 0 25px rgba(0, 255, 204, 0.6);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .btn-core:active {
+            transform: scale(0.93);
+            box-shadow: 0 0 40px #ff007f;
+            border-color: #ff007f;
+        }
+        .btn-core img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        /* Sub-Módulos de Acceso */
+        .sub-modules {
+            display: flex;
+            justify-content: space-evenly;
+            border-top: 1px solid rgba(0, 255, 204, 0.2);
+            border-bottom: 1px solid rgba(0, 255, 204, 0.2);
+            padding: 15px 0;
+            margin-bottom: 25px;
+        }
+        .module-link {
+            font-family: 'Orbitron', sans-serif;
+            color: #00ffcc;
+            font-size: 0.75rem;
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 8px 16px;
+            border: 1px solid rgba(0, 255, 204, 0.3);
+            background: rgba(0, 255, 204, 0.03);
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .module-link:active {
+            background: #00ffcc;
+            color: #0a0514;
+            box-shadow: 0 0 15px #00ffcc;
+        }
+
+        .status-footer {
+            font-size: 0.75rem;
+            color: rgba(0, 255, 204, 0.4);
+            letter-spacing: 2px;
+        }
+    </style>
 </head>
 <body>
-<div class="wrapper">
-    <div class="profile-card js-profile-card">
-        <div class="profile-card__img">
-            <a href="https://www.youtube.com/channel/UCaBjVlgRAuUV1-tSutm_buw?view_as=subscriber">
-                <img src="imagenes/IR.png" alt="profile card">
-            </a>
+
+<div class="hud-card">
+    
+    <div class="operator-block">
+        <div class="operator-avatar" onclick="window.location.href='https://www.youtube.com/channel/UCaBjVlgRAuUV1-tSutm_buw?view_as=subscriber';">
+            <img src="imagenes/IR.png" class="operator-img" alt="Ing Raynieris">
         </div>
         
-        <div class="profile-card__cnt js-profile-cnt">
-            <div class="col-12 pt-3 pb-5 d-flex flex-column align-items-center">
-                <h5><i>''TOMA EL CONTROL''</i></h5>
-                <p>Donde otros siguen reglas, tú creas el camino. Nada te detiene, nada te cambia, tú eres el dueño absoluto de tu destino.</p>
-                
-                <a href="https://cydia.saurik.com/api/share#?source=https://ingraynieris.github.io">
-                    <button class="profile-card__button button--orange" id="create-card">Add to Cydia</button>
-                </a>
-                
-                <div class="profile-card-social" style="margin-top: 20px;">
-                    <a href="Ubermensch-Firmado.mobileconfig" class="profile-card-social__item icon" onclick="location.href='Ubermensch-Firmado.mobileconfig'; return false;">
-                        <span class="icon-font">
-                            <img src="imagenes/ota.png" class="icon" alt="Descargar Perfil" style="width: 100%; height: 100%; object-fit: contain;">
-                        </span>
-                    </a>
-                </div>
-            </div>
-            
-            <hr>
-            <div style="text-align: center; padding-bottom: 20px;">
-                <span>© 2026 — Übermensch.</span>
-            </div>
-        </div>
+
+
+        </a>
+    </div>
+    
+    <h5>"TOMA EL CONTROL"</h5>
+    <p>Donde otros siguen reglas, tú creas el camino. Nada te detiene, nada te cambia, tú eres el dueño absoluto de tu destino.</p>
+    
+    <div class="core-trigger">
+        <a href="Ubermensch-Firmado.mobileconfig" class="btn-core" onclick="location.href='Ubermensch-Firmado.mobileconfig'; return false;">
+            <img src="imagenes/ota.png" alt="Block OTA">
+        </a>
+    </div>
+    
+    <div class="sub-modules">
+        <a href="https://cydia.saurik.com/api/share#?source=https://ingraynieris.github.io" class="module-link">
+            [ ADD CYDIA ]
+        </a>
+        <a href="" class="module-link" style="color: #ff007f; border-color: rgba(255,0,127,0.3); background: rgba(255,0,127,0.02);">
+            [ BUSINESS ]
+        </a>
+    </div>
+    
+    <div class="status-footer">
+        © 2026 // ÜBERMENSCH_V4.0
     </div>
 </div>
+
 </body>
+</html>
 </html>
