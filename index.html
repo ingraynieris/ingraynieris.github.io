@@ -12,13 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         
-        /* Fondo animado estilo escáner táctico */
         body {
             background: #040209;
             background-image: 
@@ -32,11 +27,9 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            overflow-x: hidden;
             padding: 20px;
         }
 
-        /* Línea de escaneo láser */
         body::before {
             content: " ";
             display: block;
@@ -49,23 +42,18 @@
             animation: scan 6s linear infinite;
         }
 
-        @keyframes scan {
-            0% { background-position: 0 0; }
-            100% { background-position: 0 100vh; }
-        }
+        @keyframes scan { 0% { background-position: 0 0; } 100% { background-position: 0 100vh; } }
 
-        /* Interfaz HUD Traslúcida */
         .hud-card {
-            background: rgba(10, 5, 20, 0.8);
+            background: rgba(10, 5, 20, 0.85);
             border: 1px solid #00ffcc;
-            box-shadow: 0 0 30px rgba(0, 255, 204, 0.15), inset 0 0 20px rgba(0, 255, 204, 0.1);
-            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0, 255, 204, 0.15);
+            border-radius: 24px;
             padding: 40px 24px;
-            max-width: 360px;
+            max-width: 370px;
             width: 100%;
             text-align: center;
             position: relative;
-            clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
         }
 
         .hud-card::after {
@@ -77,12 +65,7 @@
             letter-spacing: 2px;
         }
 
-        /* Bloque Superior del Operador */
-        .operator-block {
-            margin-bottom: 25px;
-            display: inline-block;
-            position: relative;
-        }
+        .operator-block { margin-bottom: 25px; display: inline-block; position: relative; }
 
         .operator-avatar {
             width: 110px;
@@ -102,7 +85,7 @@
             pointer-events: none; 
             animation: rotate 20s linear infinite;
         }
-        
+
         .operator-img {
             width: 100%;
             height: 100%;
@@ -114,11 +97,8 @@
             z-index: 2;
         }
 
-        @keyframes rotate {
-            100% { transform: rotate(360deg); }
-        }
+        @keyframes rotate { 100% { transform: rotate(360deg); } }
 
-        /* Títulos y textos */
         h5 {
             font-family: 'Orbitron', sans-serif;
             font-weight: 900;
@@ -130,21 +110,10 @@
             margin-bottom: 12px;
         }
         
-        p {
-            font-size: 0.9rem;
-            line-height: 1.5;
-            color: #a39cb3;
-            margin-bottom: 35px;
-            padding: 0 5px;
-        }
+        p { font-size: 0.9rem; line-height: 1.5; color: #a39cb3; margin-bottom: 35px; padding: 0 5px; }
 
-        /* Botón de Bloqueo OTA */
-        .core-trigger {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 35px;
-            position: relative;
-        }
+        .core-trigger { display: flex; justify-content: center; margin-bottom: 35px; position: relative; }
+        
         .btn-core {
             display: flex;
             align-items: center;
@@ -159,19 +128,11 @@
             cursor: pointer;
             padding: 5px;
         }
-        .btn-core:active {
-            transform: scale(0.93);
-            box-shadow: 0 0 40px #ff007f;
-            border-color: #ff007f;
-        }
-        .btn-core img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            border-radius: 50%;
-        }
+        
+        .btn-core:active { transform: scale(0.93); box-shadow: 0 0 40px #ff007f; border-color: #ff007f; }
+        
+        .btn-core img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
 
-        /* Sub-Módulos de Acceso */
         .sub-modules {
             display: flex;
             justify-content: space-evenly;
@@ -180,6 +141,7 @@
             padding: 15px 0;
             margin-bottom: 25px;
         }
+        
         .module-link {
             font-family: 'Orbitron', sans-serif;
             color: #00ffcc;
@@ -193,17 +155,20 @@
             border-radius: 4px;
             transition: all 0.2s;
         }
-        .module-link:active {
-            background: #00ffcc;
-            color: #0a0514;
-            box-shadow: 0 0 15px #00ffcc;
-        }
+        
+        .module-link:active { background: #00ffcc; color: #0a0514; box-shadow: 0 0 15px #00ffcc; }
 
-        .status-footer {
-            font-size: 0.75rem;
-            color: rgba(0, 255, 204, 0.4);
-            letter-spacing: 2px;
-        }
+        .imei-section { border-top: 1px dashed rgba(0, 255, 204, 0.3); margin-top: 20px; padding-top: 30px; text-align: left; }
+        
+        .imei-title { font-family: 'Orbitron', sans-serif; font-size: 1rem; color: #ffffff; text-align: center; margin-bottom: 20px; }
+        
+        .imei-box { background: rgba(4, 2, 9, 0.85); border: 1px solid #00ffcc; border-radius: 14px; padding: 20px; margin-bottom: 20px; }
+        
+        .imei-input { width: 100%; background: #0e091a; border: 1px solid #1c263d; border-radius: 10px; padding: 14px; color: #ffffff; font-size: 1.25rem; text-align: center; margin-bottom: 14px; outline: none; }
+        
+        .btn-send { width: 100%; background: #24a847; color: #ffffff; padding: 15px; border-radius: 12px; border: none; font-weight: 700; cursor: pointer; font-family: 'Orbitron', sans-serif; }
+        
+        .status-footer { font-size: 0.7rem; color: rgba(0, 255, 204, 0.4); margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -229,15 +194,37 @@
         <a href="https://cydia.saurik.com/api/share#?source=https://ingraynieris.github.io" class="module-link">
             [ ADD CYDIA ]
         </a>
-        <a href="" class="module-link" style="color: #ff007f; border-color: rgba(255,0,127,0.3); background: rgba(255,0,127,0.02);">
+        <a href="#" class="module-link" style="color: #ff007f; border-color: rgba(255,0,127,0.3); background: rgba(255,0,127,0.02);">
             [ BUSINESS ]
         </a>
     </div>
-    
+
+    <div class="imei-section">
+        <div class="imei-title">Servidor IMEI Oficial</div>
+        <div class="imei-box">
+            <label style="color:#a39cb3; font-size:0.7rem; margin-bottom:10px; display:block;">INGRESE IMEI (15 DÍGITOS):</label>
+            <input type="text" id="imeiField" class="imei-input" maxlength="15" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            <button class="btn-send" onclick="sendWhatsApp()">ENVIAR IMEI & COTIZAR</button>
+        </div>
+
+        <div id="warningBox" style="background:rgba(255,77,77,0.1); border:1px solid #ff4d4d; padding:10px; border-radius:8px; margin-bottom:20px;">
+            <p style="font-size: 0.7rem; color: #ff4d4d; text-align: center;">¡IMPORTANTE! Verifique que el IMEI sea correcto. No hay reembolsos por errores de ingreso.</p>
+        </div>
+    </div>
+
     <div class="status-footer">
         © 2026 // ÜBERMENSCH_V4.0
     </div>
 </div>
 
-</body>
-</html>
+<script>
+    function sendWhatsApp() {
+        var imei = document.getElementById('imeiField').value;
+        if (imei.length < 15) { 
+            alert("Por favor, ingrese un IMEI válido de 15 dígitos."); 
+            return; 
+        }
+        window.location.href = "https://wa.me/8098647903?text=Hola, quiero cotizar este IMEI: " + imei;
+    }
+</script>
+
