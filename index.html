@@ -2,229 +2,116 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="google-site-verification" content="nI1viW5j60gr4iLN3oail8c0VlUMCmwL9guqpVF0lBc" />
-    <title>Übermensch | Override Terminal</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ÜBERMENSCH | OVERRIDE TERMINAL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <style>
+        :root { --neon: #00ffcc; --bg: #040209; --pink: #ff007f; --glass: rgba(10, 5, 20, 0.7); }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         
-        body {
-            background: #040209;
-            background-image: 
-                radial-gradient(circle at 50% 30%, #1e0b36 0%, #040209 80%),
-                linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
-                linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
-            background-size: 100% 100%, 100% 4px, 6px 100%;
-            font-family: 'Share Tech Mono', monospace;
-            color: #00ffcc;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
+        body { 
+            background: var(--bg); 
+            background-image: radial-gradient(circle at 50% 50%, #1e0b36 0%, #040209 100%);
+            color: #fff; font-family: 'Share Tech Mono', monospace;
+            min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px;
         }
-
-        body::before {
-            content: " ";
-            display: block;
-            position: fixed;
-            top: 0; left: 0; bottom: 0; right: 0;
-            background: linear-gradient(rgba(18, 16, 16, 0) 0%, rgba(0, 255, 204, 0.05) 10%, rgba(18, 16, 16, 0) 11%);
-            width: 100%; height: 100%;
-            z-index: 10;
-            pointer-events: none;
-            animation: scan 6s linear infinite;
-        }
-
-        @keyframes scan { 0% { background-position: 0 0; } 100% { background-position: 0 100vh; } }
 
         .hud-card {
-            background: rgba(10, 5, 20, 0.85);
-            border: 1px solid #00ffcc;
-            box-shadow: 0 0 30px rgba(0, 255, 204, 0.15);
-            border-radius: 24px;
-            padding: 40px 24px;
-            max-width: 370px;
-            width: 100%;
-            text-align: center;
-            position: relative;
+            background: var(--glass); backdrop-filter: blur(25px);
+            border: 1px solid rgba(0, 255, 204, 0.3); border-radius: 30px;
+            padding: 40px; width: 100%; max-width: 400px;
+            text-align: center; box-shadow: 0 0 50px rgba(0,0,0,0.9);
         }
-
-        .hud-card::after {
-            content: "SYSTEM: READY";
-            position: absolute;
-            top: 8px; left: 15px;
-            font-size: 0.6rem;
-            color: rgba(0, 255, 204, 0.5);
-            letter-spacing: 2px;
-        }
-
-        .operator-block { margin-bottom: 25px; display: inline-block; position: relative; }
 
         .operator-avatar {
-            width: 110px;
-            height: 110px;
-            margin: 0 auto 12px auto;
-            position: relative;
-            cursor: pointer;
+            width: 120px; height: 120px; margin: 0 auto 20px; border-radius: 50%;
+            border: 2px solid var(--neon); overflow: hidden; cursor: pointer;
+            transition: 0.3s; box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
         }
-        
-        .operator-avatar::before {
-            content: '';
-            position: absolute;
-            top: -4px; left: -4px; right: -4px; bottom: -4px;
-            border: 2px dashed #00ffcc;
-            border-radius: 50%;
-            z-index: 1;
-            pointer-events: none; 
-            animation: rotate 20s linear infinite;
-        }
+        .operator-avatar:hover { transform: scale(1.05); border-color: var(--pink); }
+        .operator-img { width: 100%; height: 100%; object-fit: cover; }
 
-        .operator-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            padding: 4px;
-            background: #0a0514;
-            position: relative;
-            z-index: 2;
-        }
+        h5 { font-family: 'Orbitron'; font-size: 1.5rem; color: #fff; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 4px; text-shadow: 0 0 10px var(--neon); }
+        p { font-size: 0.9rem; color: #a39cb3; margin-bottom: 30px; line-height: 1.6; }
 
-        @keyframes rotate { 100% { transform: rotate(360deg); } }
-
-        h5 {
-            font-family: 'Orbitron', sans-serif;
-            font-weight: 900;
-            font-size: 1.4rem;
-            letter-spacing: 3px;
-            color: #ffffff;
-            text-transform: uppercase;
-            text-shadow: 0 0 10px #00ffcc;
-            margin-bottom: 12px;
-        }
-        
-        p { font-size: 0.9rem; line-height: 1.5; color: #a39cb3; margin-bottom: 35px; padding: 0 5px; }
-
-        .core-trigger { display: flex; justify-content: center; margin-bottom: 35px; position: relative; }
-        
+        /* Botón OTA con animación completa */
         .btn-core {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 170px;
-            height: 170px;
-            border-radius: 50%;
-            background: #ffffff;
-            border: 4px solid #00ffcc;
-            box-shadow: 0 0 25px rgba(0, 255, 204, 0.6);
-            transition: transform 0.2s, box-shadow 0.2s;
-            cursor: pointer;
-            padding: 5px;
-        }
-        
-        .btn-core:active { transform: scale(0.93); box-shadow: 0 0 40px #ff007f; border-color: #ff007f; }
-        
-        .btn-core img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
+            display: flex; align-items: center; justify-content: center;
+            width: 100px; height: 100px; border-radius: 50%;
+            background: #fff; border: 4px solid var(--neon);
+            margin: 0 auto 30px; cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 0 30px rgba(0, 255, 204, 0.3);
+            position: relative; overflow: hidden;
+        } /* Llave corregida */
 
-        .sub-modules {
-            display: flex;
-            justify-content: space-evenly;
-            border-top: 1px solid rgba(0, 255, 204, 0.2);
-            border-bottom: 1px solid rgba(0, 255, 204, 0.2);
-            padding: 15px 0;
-            margin-bottom: 25px;
-        }
+        .btn-core:hover { transform: scale(1.05); box-shadow: 0 0 40px var(--neon); }
+        .btn-core:active { transform: scale(0.9); border-color: var(--pink); }
         
-        .module-link {
-            font-family: 'Orbitron', sans-serif;
-            color: #00ffcc;
-            font-size: 0.75rem;
-            text-decoration: none;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            padding: 8px 16px;
-            border: 1px solid rgba(0, 255, 204, 0.3);
-            background: rgba(0, 255, 204, 0.03);
-            border-radius: 4px;
-            transition: all 0.2s;
+        /* Ajuste de tamaño de imagen: cambia el padding para agrandar/achicar */
+        .btn-core img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: contain; 
+            padding: 3px; 
         }
-        
-        .module-link:active { background: #00ffcc; color: #0a0514; box-shadow: 0 0 15px #00ffcc; }
 
-        .imei-section { border-top: 1px dashed rgba(0, 255, 204, 0.3); margin-top: 20px; padding-top: 30px; text-align: left; }
+        .sub-modules { display: flex; justify-content: space-evenly; border-top: 1px solid rgba(0,255,204,0.2); border-bottom: 1px solid rgba(0,255,204,0.2); padding: 15px 0; margin-bottom: 30px; }
+        .module-link { font-family: 'Orbitron'; color: var(--neon); font-size: 0.75rem; text-decoration: none; padding: 10px; border: 1px solid rgba(0,255,204,0.3); border-radius: 8px; transition: 0.3s; }
+        .module-link:hover { background: var(--neon); color: var(--bg); }
+
+        .imei-box { background: rgba(0,0,0,0.3); border: 1px solid rgba(0, 255, 204, 0.3); padding: 25px; border-radius: 20px; margin-bottom: 20px; }
+        .imei-title { font-family: 'Orbitron'; font-size: 1.1rem; color: #fff; margin-bottom: 15px; }
+        .imei-input { width: 100%; background: rgba(0,0,0,0.5); border: 1px solid var(--neon); padding: 18px; color: var(--neon); border-radius: 12px; text-align: center; font-size: 1.3rem; margin-bottom: 15px; outline: none; }
+        .btn-send { width: 100%; background: #24a847; color: #fff; border: none; padding: 18px; border-radius: 12px; font-family: 'Orbitron'; cursor: pointer; font-weight: 900; letter-spacing: 2px; transition: 0.3s; }
+        .btn-send:hover { background: #1e8a3a; box-shadow: 0 0 20px #24a847; }
         
-        .imei-title { font-family: 'Orbitron', sans-serif; font-size: 1rem; color: #ffffff; text-align: center; margin-bottom: 20px; }
-        
-        .imei-box { background: rgba(4, 2, 9, 0.85); border: 1px solid #00ffcc; border-radius: 14px; padding: 20px; margin-bottom: 20px; }
-        
-        .imei-input { width: 100%; background: #0e091a; border: 1px solid #1c263d; border-radius: 10px; padding: 14px; color: #ffffff; font-size: 1.25rem; text-align: center; margin-bottom: 14px; outline: none; }
-        
-        .btn-send { width: 100%; background: #24a847; color: #ffffff; padding: 15px; border-radius: 12px; border: none; font-weight: 700; cursor: pointer; font-family: 'Orbitron', sans-serif; }
-        
-        .status-footer { font-size: 0.7rem; color: rgba(0, 255, 204, 0.4); margin-top: 20px; }
+        .warning-box { background: rgba(255, 77, 77, 0.05); border: 1px solid rgba(255, 77, 77, 0.3); padding: 15px; border-radius: 12px; }
+        .warning-box p { color: #ff4d4d; font-size: 0.7rem; margin: 0; font-weight: bold; }
+        .status-footer { font-size: 0.6rem; color: rgba(0,255,204,0.4); margin-top: 30px; letter-spacing: 3px; }
     </style>
 </head>
 <body>
 
 <div class="hud-card">
-    
-    <div class="operator-block">
-        <div class="operator-avatar" onclick="window.location.href='https://www.youtube.com/@ubermensch.3';">
-            <img src="imagenes/IR.png" class="operator-img" alt="Ing Raynieris">
-        </div>
+    <div class="operator-avatar" onclick="window.location.href='https://youtube.com';">
+        <img src="imagenes/IR.png" class="operator-img" alt="IR">
     </div>
-    
+
     <h5>"TOMA EL CONTROL"</h5>
     <p>Donde otros siguen reglas, tú creas el camino. Nada te detiene, nada te cambia, tú eres el dueño absoluto de tu destino.</p>
-    
-    <div class="core-trigger">
-        <a href="Ubermensch-Firmado.mobileconfig" download="Ubermensch-Firmado.mobileconfig" class="btn-core">
-            <img src="imagenes/ota.png" alt="Block OTA">
-        </a>
-    </div>
-    
+
+    <a href="Ubermensch-Firmado.mobileconfig" download="Ubermensch-Firmado.mobileconfig" class="btn-core">
+        <img src="imagenes/ota.png" alt="OTA">
+    </a>
+
     <div class="sub-modules">
-        <a href="https://cydia.saurik.com/api/share#?source=https://ingraynieris.github.io" class="module-link">
-            [ ADD CYDIA ]
-        </a>
-        <a href="#" class="module-link" style="color: #ff007f; border-color: rgba(255,0,127,0.3); background: rgba(255,0,127,0.02);">
-            [ BUSINESS ]
-        </a>
+        <a href="https://cydia.saurik.com/api/share#?source=https://ingraynieris.github.io" class="module-link">[ ADD CYDIA ]</a>
+        <a href="#" class="module-link" style="color:var(--pink); border-color:var(--pink);">[ BUSINESS ]</a>
     </div>
-
-    <div class="imei-section">
+    
+    <div class="imei-box">
         <div class="imei-title">Servidor IMEI Oficial</div>
-        <div class="imei-box">
-            <label style="color:#a39cb3; font-size:0.7rem; margin-bottom:10px; display:block;">INGRESE IMEI (15 DÍGITOS):</label>
-            <input type="text" id="imeiField" class="imei-input" maxlength="15" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-            <button class="btn-send" onclick="sendWhatsApp()">ENVIAR IMEI & COTIZAR</button>
-        </div>
-
-        <div id="warningBox" style="background:rgba(255,77,77,0.1); border:1px solid #ff4d4d; padding:10px; border-radius:8px; margin-bottom:20px;">
-            <p style="font-size: 0.7rem; color: #ff4d4d; text-align: center;">¡IMPORTANTE! Verifique que el IMEI sea correcto. No hay reembolsos por errores de ingreso.</p>
-        </div>
+        <input type="text" id="imeiField" class="imei-input" placeholder="INGRESE IMEI (15)" maxlength="15" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+        <button class="btn-send" onclick="sendWhatsApp()">ENVIAR IMEI & COTIZAR</button>
     </div>
 
-    <div class="status-footer">
-        © 2026 // ÜBERMENSCH_V4.0
+    <div class="warning-box">
+        <p>¡IMPORTANTE! Verifique el IMEI antes de enviar. No hay reembolsos por errores de ingreso o retrasos del proveedor.</p>
     </div>
+
+    <div class="status-footer">© 2026 // ÜBERMENSCH_V4.0 // TERMINAL_ALPHA</div>
 </div>
 
 <script>
     function sendWhatsApp() {
         var imei = document.getElementById('imeiField').value;
         if (imei.length < 15) { 
-            alert("Por favor, ingrese un IMEI válido de 15 dígitos."); 
-            return; 
+            alert("Error: Ingrese un IMEI válido de 15 dígitos"); return; 
         }
-        window.location.href = "https://wa.me/8098647903?text=Hola, quiero cotizar este IMEI: " + imei;
+        window.location.href = "https://wa.me/8098647903?text=" + encodeURIComponent("Hola, quiero cotizar este IMEI: " + imei);
     }
 </script>
 
+</body>
+</html>
