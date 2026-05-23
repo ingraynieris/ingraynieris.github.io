@@ -24,13 +24,14 @@
         .operator-avatar { width: 100px; height: 100px; margin: 0 auto 20px; border-radius: 50%; border: 2px solid var(--neon); overflow: hidden; cursor: pointer; transition: 0.3s; box-shadow: 0 0 15px var(--glitch); }
         .operator-avatar:hover { border-color: var(--pink); box-shadow: 0 0 20px rgba(255, 0, 127, 0.4); transform: scale(1.05); }
 
-        .amazon-section { background: rgba(0,0,0,0.3); border: 1px solid rgba(0, 255, 204, 0.3); padding: 20px; border-radius: 20px; margin-bottom: 20px; min-height: 280px; }
+        .amazon-section { background: rgba(0,0,0,0.3); border: 1px solid rgba(0, 255, 204, 0.3); padding: 20px; border-radius: 20px; margin-bottom: 20px; min-height: 280px; max-height: 280px; overflow: hidden; }
         .amazon-ad-container { background: rgba(0, 255, 204, 0.05); border: 1px solid rgba(0, 255, 204, 0.2); padding: 15px; border-radius: 20px; margin-bottom: 20px; }
         .amazon-ad-filter { filter: invert(0.9) hue-rotate(180deg) brightness(1.2); border-radius: 10px; overflow: hidden; transition: 0.3s; }
         .amazon-ad-filter:hover { filter: invert(0) hue-rotate(0deg) brightness(1); }
 
         .product-card { background: rgba(0, 255, 204, 0.08); border: 1px solid rgba(0, 255, 204, 0.2); padding: 15px; border-radius: 16px; margin-bottom: 12px; display: flex; align-items: center; gap: 20px; transition: 0.3s; }
         .product-card:hover { border-color: var(--neon); box-shadow: 0 0 15px var(--glitch); background: rgba(0, 255, 204, 0.12); }
+        .product-info { flex: 1; text-align: left; min-width: 0; }
         .product-img { width: 80px; height: 80px; border-radius: 10px; object-fit: cover; border: 2px solid var(--neon); }
         .btn-amazon { display: block; width: 100%; background: rgba(0, 255, 204, 0.1); border: 1px solid var(--neon); color: var(--neon); padding: 7px; border-radius: 6px; text-align: center; font-family: 'Orbitron'; font-size: 0.65rem; text-decoration: none; transition: 0.3s; }
         .btn-amazon:hover { background: var(--neon); color: var(--bg); transform: translateY(-2px); }
