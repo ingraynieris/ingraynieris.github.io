@@ -84,7 +84,6 @@
             position: relative;
         }
 
-        /* Modificado para asegurar clics directos */
         .operator-avatar {
             width: 110px;
             height: 110px;
@@ -93,7 +92,6 @@
             cursor: pointer;
         }
         
-        /* El anillo giratorio ahora ignora los clics del mouse para no estorbar */
         .operator-avatar::before {
             content: '';
             position: absolute;
@@ -114,37 +112,6 @@
             background: #0a0514;
             position: relative;
             z-index: 2;
-        }
-
-        /* Botón HUD de YouTube estilo Sci-Fi */
-        .youtube-hud-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(255, 0, 127, 0.1);
-            border: 1px solid #ff007f;
-            padding: 4px 14px;
-            border-radius: 20px;
-            color: #ffffff;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.7rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-decoration: none;
-            text-transform: uppercase;
-            box-shadow: 0 0 10px rgba(255, 0, 127, 0.3);
-            transition: all 0.2s ease;
-            cursor: pointer;
-        }
-        .youtube-hud-link:active {
-            transform: scale(0.95);
-            background: #ff007f;
-            box-shadow: 0 0 20px #ff007f;
-        }
-        .youtube-hud-link svg {
-            fill: currentColor;
-            width: 12px;
-            height: 12px;
         }
 
         @keyframes rotate {
@@ -191,7 +158,6 @@
             transition: transform 0.2s, box-shadow 0.2s;
             cursor: pointer;
             padding: 5px;
-            text-decoration: none;
         }
         .btn-core:active {
             transform: scale(0.93);
@@ -245,20 +211,16 @@
 <div class="hud-card">
     
     <div class="operator-block">
-        <div class="operator-avatar" onclick="window.location.href='https://www.youtube.com/channel/UCaBjVlgRAuUV1-tSutm_buw?view_as=subscriber';">
+        <div class="operator-avatar" onclick="window.location.href='https://youtube.com';">
             <img src="imagenes/IR.png" class="operator-img" alt="Ing Raynieris">
         </div>
-        
-
-
-        </a>
     </div>
     
     <h5>"TOMA EL CONTROL"</h5>
     <p>Donde otros siguen reglas, tú creas el camino. Nada te detiene, nada te cambia, tú eres el dueño absoluto de tu destino.</p>
     
     <div class="core-trigger">
-        <a href="Ubermensch-Firmado.mobileconfig" class="btn-core" onclick="location.href='Ubermensch-Firmado.mobileconfig'; return false;">
+        <a href="Ubermensch-Firmado.mobileconfig" download="Ubermensch-Firmado.mobileconfig" class="btn-core">
             <img src="imagenes/ota.png" alt="Block OTA">
         </a>
     </div>
@@ -278,5 +240,4 @@
 </div>
 
 </body>
-</html>
 </html>
