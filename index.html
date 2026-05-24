@@ -24,6 +24,7 @@
         .operator-avatar { width: 100px; height: 100px; margin: 0 auto 20px; border-radius: 50%; border: 2px solid var(--neon); overflow: hidden; cursor: pointer; transition: 0.3s; box-shadow: 0 0 15px var(--glitch); }
         .operator-avatar:hover { border-color: var(--pink); box-shadow: 0 0 20px rgba(255, 0, 127, 0.4); transform: scale(1.05); }
 
+        /* ESTILO COMPACTO MANTENIDO */
         .amazon-section { background: rgba(0,0,0,0.3); border: 1px solid rgba(0, 255, 204, 0.3); padding: 15px; border-radius: 20px; margin-bottom: 20px; }
         .amazon-ad-container { background: rgba(0, 255, 204, 0.05); border: 1px solid rgba(0, 255, 204, 0.2); padding: 15px; border-radius: 20px; margin-bottom: 20px; }
         .amazon-ad-filter { filter: invert(0.9) hue-rotate(180deg) brightness(1.2); border-radius: 10px; overflow: hidden; transition: 0.3s; }
@@ -100,8 +101,8 @@
             const display = document.getElementById('product-display');
             display.style.opacity = "0";
             setTimeout(() => {
-                // Cambiado a slice(0, 2) para evitar desbordamiento y mejorar espacio
-                const sel = [...techModules].sort(() => 0.5 - Math.random()).slice(0, 2);
+                // He actualizado el slice a 3 para mostrar 3 productos alineados perfectamente
+                const sel = [...techModules].sort(() => 0.5 - Math.random()).slice(0, 3);
                 display.innerHTML = sel.map(p => `
                     <div class="product-card">
                         <img src="${p.img}" class="product-img">
