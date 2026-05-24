@@ -24,16 +24,16 @@
         .operator-avatar { width: 100px; height: 100px; margin: 0 auto 20px; border-radius: 50%; border: 2px solid var(--neon); overflow: hidden; cursor: pointer; transition: 0.3s; box-shadow: 0 0 15px var(--glitch); }
         .operator-avatar:hover { border-color: var(--pink); box-shadow: 0 0 20px rgba(255, 0, 127, 0.4); transform: scale(1.05); }
 
-        .amazon-section { background: rgba(0,0,0,0.3); border: 1px solid rgba(0, 255, 204, 0.3); padding: 20px; border-radius: 20px; margin-bottom: 20px; min-height: 280px; max-height: 280px; overflow: hidden; }
+        .amazon-section { background: rgba(0,0,0,0.3); border: 1px solid rgba(0, 255, 204, 0.3); padding: 15px; border-radius: 20px; margin-bottom: 20px; }
         .amazon-ad-container { background: rgba(0, 255, 204, 0.05); border: 1px solid rgba(0, 255, 204, 0.2); padding: 15px; border-radius: 20px; margin-bottom: 20px; }
         .amazon-ad-filter { filter: invert(0.9) hue-rotate(180deg) brightness(1.2); border-radius: 10px; overflow: hidden; transition: 0.3s; }
         .amazon-ad-filter:hover { filter: invert(0) hue-rotate(0deg) brightness(1); }
 
-        .product-card { background: rgba(0, 255, 204, 0.08); border: 1px solid rgba(0, 255, 204, 0.2); padding: 15px; border-radius: 16px; margin-bottom: 12px; display: flex; align-items: center; gap: 20px; transition: 0.3s; }
+        .product-card { background: rgba(0, 255, 204, 0.08); border: 1px solid rgba(0, 255, 204, 0.2); padding: 10px; border-radius: 16px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; transition: 0.3s; }
         .product-card:hover { border-color: var(--neon); box-shadow: 0 0 15px var(--glitch); background: rgba(0, 255, 204, 0.12); }
-        .product-info { flex: 1; text-align: left; min-width: 0; }
-        .product-img { width: 80px; height: 80px; border-radius: 10px; object-fit: cover; border: 2px solid var(--neon); }
-        .btn-amazon { display: block; width: 100%; background: rgba(0, 255, 204, 0.1); border: 1px solid var(--neon); color: var(--neon); padding: 7px; border-radius: 6px; text-align: center; font-family: 'Orbitron'; font-size: 0.65rem; text-decoration: none; transition: 0.3s; }
+        .product-info { flex: 1; text-align: left; min-width: 0; font-size: 0.75rem; }
+        .product-img { width: 60px; height: 60px; border-radius: 10px; object-fit: cover; border: 2px solid var(--neon); }
+        .btn-amazon { display: block; width: 100%; background: rgba(0, 255, 204, 0.1); border: 1px solid var(--neon); color: var(--neon); padding: 5px; border-radius: 6px; text-align: center; font-family: 'Orbitron'; font-size: 0.6rem; text-decoration: none; transition: 0.3s; margin-top: 5px; }
         .btn-amazon:hover { background: var(--neon); color: var(--bg); transform: translateY(-2px); }
 
         .btn-send { width: 100%; background: #24a847; color: #fff; border: none; padding: 15px; border-radius: 12px; font-family: 'Orbitron'; cursor: pointer; transition: 0.3s; text-transform: uppercase; box-shadow: 0 0 10px rgba(36, 168, 71, 0.4); }
@@ -47,6 +47,7 @@
         .imei-input { width: 100%; background: rgba(0,0,0,0.5); border: 1px solid var(--neon); padding: 15px; color: var(--neon); border-radius: 12px; text-align: center; font-size: 1.1rem; margin-bottom: 10px; }
         .warning-box { border: 1px solid var(--pink); background: rgba(255, 0, 127, 0.1); color: #ffcccc; padding: 15px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid var(--pink); }
         .status-footer { font-size: 0.6rem; color: rgba(0,255,204,0.3); margin-top: 20px; }
+        .amazon-title { color: var(--neon); font-family: 'Orbitron'; font-size: 0.8rem; margin-bottom: 10px; }
     </style>
 </head>
 <body>
@@ -99,13 +100,13 @@
             const display = document.getElementById('product-display');
             display.style.opacity = "0";
             setTimeout(() => {
-                const sel = [...techModules].sort(() => 0.5 - Math.random()).slice(0, 3);
+                // Cambiado a slice(0, 2) para evitar desbordamiento y mejorar espacio
+                const sel = [...techModules].sort(() => 0.5 - Math.random()).slice(0, 2);
                 display.innerHTML = sel.map(p => `
                     <div class="product-card">
                         <img src="${p.img}" class="product-img">
                         <div class="product-info">
                             <div class="product-name">${p.nombre}</div>
-                            <div class="product-desc">${p.desc}</div>
                             <a href="${p.link}" class="btn-amazon" target="_blank">[ DESPLEGAR_COMPRA ]</a>
                         </div>
                     </div>
