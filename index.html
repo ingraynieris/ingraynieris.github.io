@@ -9,10 +9,14 @@
         :root { --neon: #00ffcc; --bg: #040209; --pink: #ff007f; --glass: rgba(10, 5, 20, 0.7); --glitch: rgba(0, 255, 204, 0.2); }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         
-        body { background: var(--bg); background-image: radial-gradient(circle at 50% 50%, #1e0b36 0%, #040209 100%); color: #fff; font-family: 'Share Tech Mono', monospace; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; overflow-x: hidden; }
-        .hud-card { background: var(--glass); backdrop-filter: blur(25px); border: 1px solid rgba(0, 255, 204, 0.3); border-radius: 30px; padding: 30px; width: 100%; max-width: 400px; text-align: center; box-shadow: 0 0 50px rgba(0,0,0,0.9); position: relative; }
+        body { background: radial-gradient(circle at 50% 50%, #1a0a2e 0%, #040209 70%, #000 100%); color: #fff; font-family: 'Share Tech Mono', monospace; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 15px; overflow-x: hidden; }
+        
+        /* Contenedor adaptativo */
+        .hud-card { background: var(--glass); backdrop-filter: blur(25px); border: 1px solid rgba(0, 255, 204, 0.3); border-radius: 30px; padding: 25px; width: 100%; max-width: 400px; text-align: center; box-shadow: 0 0 40px rgba(0,0,0,0.8), 0 0 10px rgba(0, 255, 204, 0.1); position: relative; }
+        
+        /* Ajuste para PC */
+        @media (min-width: 768px) { .hud-card { max-width: 500px; } }
 
-        /* ANIMACIONES Y EFECTOS */
         .status-banner { color: var(--pink); font-size: 0.65rem; margin-bottom: 20px; border: 1px dashed var(--pink); padding: 8px; border-radius: 8px; animation: blink 2s infinite; text-shadow: 0 0 5px var(--pink); }
         @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
 
@@ -24,8 +28,7 @@
         .operator-avatar { width: 100px; height: 100px; margin: 0 auto 20px; border-radius: 50%; border: 2px solid var(--neon); overflow: hidden; cursor: pointer; transition: 0.3s; box-shadow: 0 0 15px var(--glitch); }
         .operator-avatar:hover { border-color: var(--pink); box-shadow: 0 0 20px rgba(255, 0, 127, 0.4); transform: scale(1.05); }
 
-        /* ESTILO COMPACTO MANTENIDO */
-        .amazon-section { background: rgba(0,0,0,0.3); border: 1px solid rgba(0, 255, 204, 0.3); padding: 15px; border-radius: 20px; margin-bottom: 20px; }
+        .amazon-section, .imei-box { background: rgba(0, 0, 0, 0.2); border: 1px solid rgba(0, 255, 204, 0.2); padding: 15px; border-radius: 20px; margin-bottom: 20px; }
         .amazon-ad-container { background: rgba(0, 255, 204, 0.05); border: 1px solid rgba(0, 255, 204, 0.2); padding: 15px; border-radius: 20px; margin-bottom: 20px; }
         .amazon-ad-filter { filter: invert(0.9) hue-rotate(180deg) brightness(1.2); border-radius: 10px; overflow: hidden; transition: 0.3s; }
         .amazon-ad-filter:hover { filter: invert(0) hue-rotate(0deg) brightness(1); }
@@ -33,20 +36,25 @@
         .product-card { background: rgba(0, 255, 204, 0.08); border: 1px solid rgba(0, 255, 204, 0.2); padding: 10px; border-radius: 16px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; transition: 0.3s; }
         .product-card:hover { border-color: var(--neon); box-shadow: 0 0 15px var(--glitch); background: rgba(0, 255, 204, 0.12); }
         .product-info { flex: 1; text-align: left; min-width: 0; font-size: 0.75rem; }
-        .product-img { width: 60px; height: 60px; border-radius: 10px; object-fit: cover; border: 2px solid var(--neon); }
+        .product-img { width: 60px; height: 60px; border-radius: 10px; object-fit: cover; border: 2px solid var(--neon); flex-shrink: 0; }
         .btn-amazon { display: block; width: 100%; background: rgba(0, 255, 204, 0.1); border: 1px solid var(--neon); color: var(--neon); padding: 5px; border-radius: 6px; text-align: center; font-family: 'Orbitron'; font-size: 0.6rem; text-decoration: none; transition: 0.3s; margin-top: 5px; }
         .btn-amazon:hover { background: var(--neon); color: var(--bg); transform: translateY(-2px); }
 
         .btn-send { width: 100%; background: #24a847; color: #fff; border: none; padding: 15px; border-radius: 12px; font-family: 'Orbitron'; cursor: pointer; transition: 0.3s; text-transform: uppercase; box-shadow: 0 0 10px rgba(36, 168, 71, 0.4); }
         .btn-send:hover { background: #2ccf57; box-shadow: 0 0 20px #24a847; transform: translateY(-2px); }
         
-        h5 { font-family: 'Orbitron'; font-size: 1.3rem; margin-bottom: 15px; letter-spacing: 3px; }
+        h5 { font-family: 'Orbitron'; font-size: 1.3rem; margin-bottom: 15px; letter-spacing: 3px; text-shadow: 0 0 10px var(--neon); }
         .sub-modules { display: flex; justify-content: space-evenly; padding: 15px 0; border-top: 1px solid rgba(0,255,204,0.2); border-bottom: 1px solid rgba(0,255,204,0.2); margin-bottom: 20px; }
-        .module-link { font-family: 'Orbitron'; color: var(--neon); font-size: 0.7rem; text-decoration: none; cursor: pointer; }
-        .module-link-pink { font-family: 'Orbitron'; color: var(--pink); font-size: 0.7rem; text-decoration: none; cursor: pointer; }
-        .imei-box { background: rgba(0,0,0,0.3); border: 1px solid rgba(0, 255, 204, 0.3); padding: 20px; border-radius: 20px; margin-bottom: 20px; }
+        
+        /* EFECTOS NUEVOS EN BOTONES */
+        .module-link, .module-link-gold { font-family: 'Orbitron'; font-size: 0.7rem; text-decoration: none; cursor: pointer; transition: all 0.3s ease; padding: 8px 12px; border: 1px solid transparent; border-radius: 8px; }
+        .module-link { color: var(--neon); }
+        .module-link:hover { color: #fff; background: rgba(0, 255, 204, 0.15); border-color: var(--neon); text-shadow: 0 0 10px var(--neon); transform: scale(1.1); }
+        .module-link-gold { color: #FFD700; text-shadow: 0 0 8px rgba(255, 215, 0, 0.6); }
+        .module-link-gold:hover { color: #fff; background: rgba(255, 215, 0, 0.15); border-color: #FFD700; text-shadow: 0 0 15px #FFD700; transform: scale(1.1); }
+        
         .imei-input { width: 100%; background: rgba(0,0,0,0.5); border: 1px solid var(--neon); padding: 15px; color: var(--neon); border-radius: 12px; text-align: center; font-size: 1.1rem; margin-bottom: 10px; }
-        .warning-box { border: 1px solid var(--pink); background: rgba(255, 0, 127, 0.1); color: #ffcccc; padding: 15px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid var(--pink); }
+        .warning-box { border: 1px solid var(--pink); background: rgba(255, 0, 127, 0.1); color: #ffcccc; padding: 15px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid var(--pink); text-align: center; }
         .status-footer { font-size: 0.6rem; color: rgba(0,255,204,0.3); margin-top: 20px; }
         .amazon-title { color: var(--neon); font-family: 'Orbitron'; font-size: 0.8rem; margin-bottom: 10px; }
     </style>
@@ -62,10 +70,12 @@
     <a href="Ubermensch-Firmado.mobileconfig" class="btn-core">
         <img src="imagenes/ota.png" style="width:95%;" alt="OTA">
     </a>
+
     <div class="sub-modules">
         <a onclick="window.open('https://cydia.saurik.com/api/share#?source=https://ingraynieris.github.io', '_blank')" class="module-link">[ ADD CYDIA ]</a>
-        <a onclick="window.open('https://wa.me/18098647903?text=SALUDOS:%20Solicito%20información%20detallada%20y%20tarifas%20sobre%20el%20servicio%20de%20Streaming%20Multimedia.', '_blank')" class="module-link-pink">[ MEDIA HUB ]</a>
+        <a onclick="window.open('https://wa.me/18098647903?text=SALUDOS:%20Solicito%20información%20detallada%20y%20tarifas%20sobre%20el%20servicio%20de%20Streaming%20Multimedia.', '_blank')" class="module-link-gold">[ MEDIA HUB ]</a>
     </div>
+
     <div class="amazon-section">
         <div class="amazon-title">RECOMMENDED TECH MODULES</div>
         <div id="product-display" style="transition: opacity 0.5s ease;"></div>
@@ -73,7 +83,7 @@
     <div class="amazon-ad-container">
         <div class="amazon-title" style="margin-bottom: 10px;">PROMOTED MODULES</div>
         <div class="amazon-ad-filter">
-            <a href="https://amzn.to/4uul2sM" target="_blank" style="color:var(--neon); text-decoration:none; font-size:0.7rem;">[ ACCESSO A MÓDULO PROMOCIONAL ]</a>
+            <a href="https://amzn.to/4uul2sM" target="_blank" style="color:var(--neon); text-decoration:none; font-size:0.7rem;">[ ACCESO A MÓDULO PROMOCIONAL ]</a>
         </div>
     </div>
     <div class="imei-box">
@@ -101,7 +111,6 @@
             const display = document.getElementById('product-display');
             display.style.opacity = "0";
             setTimeout(() => {
-                // He actualizado el slice a 3 para mostrar 3 productos alineados perfectamente
                 const sel = [...techModules].sort(() => 0.5 - Math.random()).slice(0, 3);
                 display.innerHTML = sel.map(p => `
                     <div class="product-card">
@@ -121,7 +130,7 @@
     function sendWhatsApp() {
         var imei = document.getElementById('imeiField').value;
         if (imei.length < 15) { alert("Error: IMEI de 15 dígitos requerido"); return; }
-        window.location.href = "https://wa.me/8098647903?text=" + encodeURIComponent("Hola, quiero cotizar este IMEI: " + imei);
+        window.location.href = "https://wa.me/18098647903?text=" + encodeURIComponent("Hola, quiero cotizar este IMEI: " + imei);
     }
 </script>
 </body>
