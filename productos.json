@@ -58,5 +58,65 @@
     "desc": "USB-C a USB-C de 60 W (3.3 ft)",
     "img": "https://m.media-amazon.com/images/I/41yeZ5+9V6L._AC_SX342_SY445_QL70_FMwebp_.jpg",
     "link": "https://a.co/d/0flExOjf"
+  },
+{
+    "nombre": "iK Foam PRO 2 Espuma",
+    "desc": "Pulverizador",
+    "img": "https://m.media-amazon.com/images/I/71xcMC4k3QL._AC_SX679_.jpg",
+    "link": "https://a.co/d/04gZwufi"
+  },
+  {
+    "nombre": "Liquid X Cepillos Kit de 3",
+    "desc": "Piezas",
+    "img": "https://m.media-amazon.com/images/I/61PbZOo2yqL._AC_SX679_.jpg",
+    "link": "https://a.co/d/02H3ezj8"
+  },
+  {
+    "nombre": "Espuma Eléctrico Espuma",
+    "desc": "Pulverizador",
+    "img": "https://m.media-amazon.com/images/I/61gwLhMD4gL._AC_SX679_.jpg",
+    "link": "https://a.co/d/0c7vm3l4"
+  },
+  {
+    "nombre": "Espuma Eléctrico 2L Espuma",
+    "desc": "Pulverizador",
+    "img": "https://m.media-amazon.com/images/I/61njhdVQ3GL._AC_SX679_.jpg",
+    "link": "https://a.co/d/05nY5CfM"
+  },
+  {
+    "nombre": "Kit de accesorios Ridgid",
+    "desc": "Manguera",
+    "img": "https://m.media-amazon.com/images/I/81iODjLB5AL._AC_SX679_.jpg",
+    "link": "https://a.co/d/0j51hqDP"
+  },
+  {
+    "nombre": "Nextzett Elimina olores",
+    "desc": "Cleaner Pro",
+    "img": "https://m.media-amazon.com/images/I/51FFjKoe5LL._AC_SX679_.jpg",
+    "link": "https://a.co/d/07DFUjKb"
+  },
+  {
+    "nombre": "Meguiar's Elimina olores",
+    "desc": "Cleaner Pro",
+    "img": "https://m.media-amazon.com/images/I/719H6mLEZnL._AC_SX679_.jpg",
+    "link": "https://a.co/d/0agZfxUt"
+    },
+  {
+    "nombre": "HOL133 kit Cubetas",
+    "desc": "Chemical Guys",
+    "img": "https://m.media-amazon.com/images/I/81qAxIkg6HL._AC_SX679_.jpg",
+    "link": "https://a.co/d/0hC7IHMZ"
+  },
+  {
+    "nombre": "Carrito de Cubo",
+    "desc": "Cubo",
+    "img": "https://m.media-amazon.com/images/I/71PCudwiBqL._AC_SX679_.jpg",
+    "link": "https://a.co/d/0ecWxCAk"
+  },
+  {
+    "nombre": "Barra de arcilla",
+    "desc": "Chemical Guys",
+    "img": "https://m.media-amazon.com/images/I/61s3+Xs4aAL._AC_SX679_.jpg",
+    "link": "https://a.co/d/0esuMCK5"
   }
 ]
