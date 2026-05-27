@@ -5,70 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OVERRIDE TERMINAL</title>
     <style>
-        body { 
-            background: #040209; 
-            color: #fff; 
-            font-family: monospace; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            padding: 20px; 
-            margin: 0;
-        }
-        .container { width: 100%; max-width: 500px; }
-        .card { 
-            background: rgba(20, 20, 30, 0.9); 
-            border: 1px solid #00ffcc; 
-            padding: 20px; 
-            border-radius: 15px; 
-            margin-bottom: 20px; 
-            text-align: center;
-        }
-        button { 
-            background: transparent; 
-            border: 1px solid #ffd700; 
-            color: #ffd700; 
-            padding: 10px; 
-            width: 100%; 
-            border-radius: 5px; 
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        input { 
-            width: 100%; 
-            padding: 10px; 
-            background: #000; 
-            border: 1px solid #00ffcc; 
-            color: #00ffcc; 
-            margin-bottom: 10px;
-        }
+        /* CSS BLINDADO */
+        body { background: #040209 !important; color: #fff !important; font-family: sans-serif !important; margin: 0 !important; padding: 20px !important; display: flex !important; justify-content: center !important; }
+        .container { width: 100% !important; max-width: 500px !important; }
+        .card { background: #12121e !important; border: 1px solid #00ffcc !important; padding: 20px !important; border-radius: 15px !important; margin-bottom: 20px !important; text-align: center !important; }
+        button { background: transparent !important; border: 1px solid #ffd700 !important; color: #ffd700 !important; padding: 12px !important; width: 100% !important; border-radius: 5px !important; cursor: pointer !important; margin-top: 10px !important; font-weight: bold !important; }
+        input { width: 100% !important; padding: 12px !important; background: #000 !important; border: 1px solid #00ffcc !important; color: #00ffcc !important; margin-bottom: 10px !important; border-radius: 5px !important; }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <div class="card">
-        <h3 id="versiculo">CARGANDO...</h3>
-        <button onclick="validarAcceso()">[ DATOS BANCARIOS ]</button>
+    <div class="container">
+        <div class="card">
+            <h3 id="versiculo">CARGANDO...</h3>
+            <button onclick="validarAcceso()">[ DATOS BANCARIOS ]</button>
+        </div>
+        <div class="card">
+            <div id="product-display"></div>
+            <input type="text" id="imeiField" placeholder="INGRESE IMEI (15)" maxlength="15">
+            <button onclick="sendWhatsApp()" style="background:#24a847 !important; color:white !important; border:none !important;">[ PROCESAR SOLICITUD ]</button>
+        </div>
     </div>
-
-    <div class="card">
-        <div id="product-display"></div>
-        <input type="text" id="imeiField" placeholder="INGRESE IMEI (15)" maxlength="15">
-        <button onclick="sendWhatsApp()" style="background:#24a847; color:white; border:none;">[ PROCESAR SOLICITUD ]</button>
-    </div>
-</div>
-
-<div id="modalCuentas" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); align-items:center; justify-content:center;">
-    <div class="card">
-        <h3>DATOS BANCARIOS</h3>
-        <p>Tu información aquí...</p>
-        <button onclick="document.getElementById('modalCuentas').style.display='none'">[ CERRAR ]</button>
-    </div>
-</div>
-
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
-
-
