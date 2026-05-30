@@ -1,88 +1,249 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OVERRIDE TERMINAL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ÜBERMENSCH | OVERRIDE TERMINAL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <style>
-        body { 
-            background: #040209 !important; 
-            color: #fff !important; 
-            font-family: sans-serif !important; 
-            margin: 0 !important; 
-            padding: 20px !important; 
-            display: flex !important; 
-            justify-content: center !important; 
-        }
-        .container { width: 100% !important; max-width: 400px !important; }
+        :root { --neon: #00ffcc; --bg: #040209; --pink: #ff007f; --gold: #FFD700; --glass: rgba(10, 5, 20, 0.7); --glitch: rgba(0, 255, 204, 0.2); }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         
-        .card { 
-            background: #12121e !important; 
-            border: 1px solid #00ffcc !important; 
-            padding: 20px !important; 
-            border-radius: 15px !important; 
-            margin-bottom: 20px !important; 
-            text-align: center !important; 
+        body { 
+            background: radial-gradient(circle at 50% 50%, #1a0a2e 0%, #040209 70%, #000 100%); 
+            color: #fff; font-family: 'Share Tech Mono', monospace; min-height: 100vh; padding: 20px; display: flex; flex-direction: column; align-items: center;
         }
 
-        /* Estilo para los productos */
-        #product-display { display: flex; flex-direction: column; gap: 20px; }
-        .product-card { border-bottom: 1px solid #333; padding-bottom: 15px; margin-bottom: 10px; }
-        .product-image { 
-            width: 100% !important; 
-            max-width: 180px !important; 
-            height: auto !important; 
-            margin: 10px auto !important; 
-            display: block !important; 
-            border-radius: 10px;
-        }
+        .wrapper { width: 100%; max-width: 900px; }
+        .page-grid { display: grid; grid-template-columns: 1fr; gap: 20px; width: 100%; }
+        @media (min-width: 900px) { .page-grid { grid-template-columns: 1fr 1fr; } }
+        
+        .hud-card { background: var(--glass); backdrop-filter: blur(25px); border: 1px solid rgba(0, 255, 204, 0.3); border-radius: 30px; padding: 25px; width: 100%; text-align: center; box-shadow: 0 0 40px rgba(0,0,0,0.8), 0 0 10px rgba(0, 255, 204, 0.1); }
 
-        button { 
-            background: transparent !important; 
-            border: 1px solid #ffd700 !important; 
-            color: #ffd700 !important; 
-            padding: 12px !important; 
-            width: 100% !important; 
-            border-radius: 5px !important; 
-            cursor: pointer !important; 
-            font-weight: bold !important;
-            margin-top: 10px;
-        }
-        input { 
-            width: 100% !important; 
-            padding: 12px !important; 
-            background: #000 !important; 
-            border: 1px solid #00ffcc !important; 
-            color: #00ffcc !important; 
-            margin-bottom: 10px !important; 
-            box-sizing: border-box !important;
-            border-radius: 5px !important;
-        }
+                #product-display { min-height: 300px; max-height: 400px; overflow-y: auto; padding-right: 5px; }
+        #product-display::-webkit-scrollbar { width: 5px; }
+        #product-display::-webkit-scrollbar-thumb { background: var(--neon); border-radius: 10px; }
+
+        .status-banner { color: var(--pink); font-size: 0.65rem; margin-bottom: 20px; border: 1px dashed var(--pink); padding: 8px; border-radius: 8px; animation: blink 2s infinite; text-shadow: 0 0 5px var(--pink); }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+
+        .btn-core { width: 80px; height: 80px; border-radius: 50%; background: #fff; border: 4px solid var(--neon); margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; transition: 0.3s; box-shadow: 0 0 25px rgba(0, 255, 204, 0.4); position: relative; }
+        .btn-core:hover { transform: scale(1.05); box-shadow: 0 0 35px var(--neon); }
+        .btn-core::after { content: ''; position: absolute; width: 100%; height: 100%; border-radius: 50%; border: 2px solid var(--neon); animation: pulse 2s infinite; opacity: 0; }
+        @keyframes pulse { 0% { transform: scale(1); opacity: 0.6; } 100% { transform: scale(1.4); opacity: 0; } }
+
+        .operator-avatar { width: 100px; height: 100px; margin: 0 auto 20px; border-radius: 50%; border: 2px solid var(--neon); overflow: hidden; cursor: pointer; transition: 0.3s; box-shadow: 0 0 15px var(--glitch); }
+        .operator-avatar:hover { border-color: var(--pink); box-shadow: 0 0 20px rgba(255, 0, 127, 0.4); transform: scale(1.05); }
+
+        .amazon-section, .imei-box, .promo-box, .payment-box { background: rgba(0, 0, 0, 0.2); border: 1px solid rgba(0, 255, 204, 0.2); padding: 15px; border-radius: 20px; margin-bottom: 20px; }
+        .product-card { background: rgba(0, 255, 204, 0.08); border: 1px solid rgba(0, 255, 204, 0.2); padding: 10px; border-radius: 16px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; transition: 0.3s; }
+        .product-card:hover { border-color: var(--neon); box-shadow: 0 0 15px var(--glitch); background: rgba(0, 255, 204, 0.12); }
+        .product-img { width: 60px; height: 60px; border-radius: 10px; object-fit: cover; border: 2px solid var(--neon); }
+        .product-info { flex: 1; text-align: left; font-size: 0.75rem; }
+        
+        .btn-amazon { display: block; width: 100%; background: rgba(0, 255, 204, 0.1); border: 1px solid var(--neon); color: var(--neon); padding: 5px; border-radius: 6px; text-align: center; font-family: 'Orbitron'; font-size: 0.6rem; text-decoration: none; transition: 0.3s; margin-top: 5px; }
+        .btn-amazon:hover { background: var(--neon); color: var(--bg); }
+
+        .btn-pay { width: 100%; background: rgba(255, 215, 0, 0.1); border: 1px solid var(--gold); color: var(--gold); padding: 12px; border-radius: 10px; font-family: 'Orbitron'; cursor: pointer; transition: 0.3s; text-transform: uppercase; margin-bottom: 10px; }
+        .btn-pay:hover { background: var(--gold); color: #000; }
+        .btn-send { width: 100%; background: #24a847; color: #fff; border: none; padding: 15px; border-radius: 12px; font-family: 'Orbitron'; cursor: pointer; transition: 0.3s; text-transform: uppercase; box-shadow: 0 0 10px rgba(36, 168, 71, 0.4); }
+        .btn-send:hover { background: #2ccf57; box-shadow: 0 0 20px #24a847; }
+        
+        .btn-close { width: 100%; background: transparent; border: 1px solid var(--neon); color: var(--neon); padding: 12px; border-radius: 10px; font-family: 'Orbitron'; cursor: pointer; transition: 0.3s; text-transform: uppercase; }
+        .btn-close:hover { background: var(--neon); color: #000; }
+        
+        h5 { font-family: 'Orbitron'; font-size: 1.3rem; margin-bottom: 15px; letter-spacing: 3px; text-shadow: 0 0 10px var(--neon); }
+        
+        .sub-modules { display: flex; justify-content: space-evenly; padding: 15px 0; border-top: 1px solid rgba(0,255,204,0.2); border-bottom: 1px solid rgba(0,255,204,0.2); margin-bottom: 20px; }
+        .module-link, .module-link-gold { font-family: 'Orbitron'; font-size: 0.7rem; text-decoration: none; cursor: pointer; transition: all 0.3s ease; padding: 10px 15px; border: 1px solid transparent; border-radius: 8px; }
+        .module-link { color: var(--neon); }
+        .module-link:hover { background: rgba(0, 255, 204, 0.15); border-color: var(--neon); box-shadow: 0 0 15px var(--neon); transform: translateY(-2px); }
+        .module-link-gold { color: var(--gold); }
+        .module-link-gold:hover { background: rgba(255, 215, 0, 0.15); border-color: var(--gold); box-shadow: 0 0 15px var(--gold); transform: translateY(-2px); }
+        
+        .btn-promo-glow { display: block; width: 100%; border: 2px solid var(--pink); color: #fff; padding: 12px; border-radius: 10px; text-decoration: none; font-family: 'Orbitron'; font-size: 0.8rem; transition: 0.3s; text-align: center; background: rgba(255, 0, 127, 0.15); }
+        .btn-promo-glow:hover { background: var(--pink); color: #fff; box-shadow: 0 0 20px var(--pink); transform: translateY(-2px); }
+        
+        .imei-input { width: 100%; background: rgba(0,0,0,0.5); border: 1px solid var(--neon); padding: 15px; color: var(--neon); border-radius: 12px; text-align: center; font-size: 1.1rem; margin-bottom: 10px; }
+        .warning-box { border: 1px solid var(--pink); background: rgba(255, 0, 127, 0.1); color: #ffcccc; padding: 15px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid var(--pink); text-align: center; font-size: 0.7rem; }
+        .module-title { color: var(--neon); font-family: 'Orbitron'; font-size: 0.8rem; margin-bottom: 15px; }
+        
+        .status-footer { text-align: center; color: var(--neon); font-family: 'Orbitron'; font-size: 0.6rem; padding: 30px; margin-top: 20px; border-top: 1px solid rgba(0, 255, 204, 0.1); }
+
+        #modalCuentas { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:1000; align-items:center; justify-content:center; padding:20px; }
+        .modal-content { background:rgba(10, 5, 20, 0.95); border: 1px solid var(--gold); padding: 25px; border-radius: 20px; max-width: 400px; width: 100%; text-align: center; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="card">
-            <h3 id="versiculo">CARGANDO...</h3>
-            <button onclick="validarAcceso()">[ DATOS BANCARIOS ]</button>
+<div class="wrapper">
+    <div class="page-grid">
+        <div class="hud-card">
+            <div class="operator-avatar" onclick="window.location.href='https://www.youtube.com/@ubermensch.3';">
+                <img src="imagenes/IR.png" style="width:100%; height:100%; object-fit:cover;" alt="IR">
+            </div>
+            <h5>"TOMA EL CONTROL"</h5>
+            <div class="status-banner">[ SISTEMA: ACTUALIZACIONES DISPONIBLES ]</div>
+            <a href="Ubermensch-Firmado.mobileconfig" class="btn-core">
+                <img src="imagenes/ota.png" style="width:95%;" alt="OTA">
+            </a>
+            <div class="sub-modules">
+                <a onclick="window.open('https://cydia.saurik.com/api/share', '_blank')" class="module-link">[ ADD CYDIA ]</a>
+                <a onclick="window.open('https://wa.me/18098647903?text=>>%20TICKET_SERVICIO%20>>%20SOLICITUD:%20STREAMING_MULTIMEDIA', '_blank')" class="module-link-gold">[ MEDIA HUB ]</a>
+            </div>
+            <div id="versiculo" style="color:var(--gold); font-size:0.8rem; font-family:'Orbitron'; margin-bottom:15px;"></div>
+            <img src="imagenes/especiales.png" style="width:100%; border-radius:15px; border:1px solid var(--neon);">
         </div>
 
-        <div class="card">
-            <div id="product-display"></div>
-            <input type="text" id="imeiField" placeholder="INGRESE IMEI (15)" maxlength="15">
-            <button onclick="sendWhatsApp()" style="background:#24a847 !important; color:white !important; border:none !important;">[ PROCESAR SOLICITUD ]</button>
+        <div class="hud-card">
+            <div class="amazon-section">
+                <div class="module-title">[ RECURSOS DE HARDWARE ]</div>
+                <div id="product-display"></div>
+            </div>
+            <div class="promo-box">
+                <div class="module-title">[ ACCESO EXCLUSIVO ]</div>
+                <a href="https://amzn.to/4uul2sM" target="_blank" class="btn-promo-glow">⚡ [ OFERTA EXCLUSIVA ]</a>
+            </div>
+            <div class="payment-box">
+                <div class="module-title">[ MÓDULO DE PAGOS ]</div>
+                <button class="btn-pay" onclick="validarAcceso()">[ DATOS BANCARIOS ]</button>
+            </div>
+            <div class="imei-box">
+                <input type="text" id="imeiField" class="imei-input" placeholder="INGRESE IMEI (15)" maxlength="15">
+                <button class="btn-send" onclick="sendWhatsApp()">[ PROCESAR SOLICITUD ]</button>
+            </div>     
+            <div class="warning-box">
+                <span style="color:var(--pink);">>⚠ VERIFICACIÓN OBLIGATORIA</span>
+            <p style="font-size: 0.65rem; margin-top:5px;">Verifique el IMEI antes de enviar. No se procesarán reembolsos por errores de ingreso.</p>
+            </div>
         </div>
     </div>
+</div>
 
-    <div id="modalCuentas" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); align-items:center; justify-content:center; z-index:1000;">
-        <div class="card" style="width: 80%;">
-            <h3>DATOS BANCARIOS</h3>
-            <p>Tu información aquí...</p>
-            <button onclick="document.getElementById('modalCuentas').style.display='none'">[ CERRAR ]</button>
-        </div>
+<div class="status-footer">
+    © 2026 // ÜBERMENSCH_V4.0 // TERMINAL_ALPHA<br>
+    <span style="font-size: 0.45rem; opacity: 0.5; line-height: 1.2; display: block; margin-top: 8px; color: #aaa;">
+        ÜBERMENSCH participa en el Programa de Afiliados de Amazon. Como tal, obtenemos ingresos por las compras elegibles realizadas a través de este terminal. Toda la información presentada es con fines de referencia y soporte técnico.
+</div>
+
+<div id="modalCuentas">
+    <div class="modal-content">
+        <h5 style="color:var(--gold);">[ DATOS BANCARIOS ]</h5>
+        <div id="lista-bancos" style="margin:20px 0; color:#fff; text-align:left;"></div>
+        <div id="contenedor-botones"></div>
     </div>
+</div>
 
-    <script src="main.js"></script>
+<script>
+
+    window.addEventListener('load', async () => {
+        // --- NUEVA LÓGICA DE VERSÍCULOS ---
+        try {
+            const respuesta = await fetch('versiculos.json');
+            const datos = await respuesta.json();
+            
+            const hoy = new Date();
+            const inicioDelAnio = new Date(hoy.getFullYear(), 0, 0);
+            const dif = hoy - inicioDelAnio;
+            const unDia = 1000 * 60 * 60 * 24;
+            const diaDelAnio = Math.floor(dif / unDia);
+            
+            // Usamos módulo para asegurar que siempre haya un índice válido
+            const indice = diaDelAnio % datos.versiculos.length;
+            const v = datos.versiculos[indice];
+            
+            document.getElementById('versiculo').innerHTML = `
+                "${v.texto}"<br>
+                <small style="color:var(--neon);">${v.referencia}</small>
+            `;
+        } catch (error) {
+            console.error("Error cargando versículos:", error);
+            document.getElementById('versiculo').innerText = "Cargando mensaje del día...";
+        }
+
+        // --- RESTO DE TUS FUNCIONES (Sin cambios) ---
+        const cuentasBancarias = [
+            {nombre: "Popular", numero: "803392315"},
+            {nombre: "Qik", numero: "1003292807"},
+            {nombre: "BHD Leon", numero: "17152590011"},
+            {nombre: "Cibao", numero: "100080188920"},
+            {nombre: "Banreservas", numero: "9608168579"}
+        ];
+
+        window.validarAcceso = () => {
+            const fecha = new Date();
+            const claveDinamica = (fecha.getDate() * 4123) + ((fecha.getMonth() + 1) * 1250) + 125433;
+            const ingreso = prompt("SOLICITUD DE ACCESO:\nIngrese su llave de autorización:");
+            
+            if (ingreso == claveDinamica) {
+                const lista = document.getElementById('lista-bancos');
+                const btns = document.getElementById('contenedor-botones');
+                const linkWhatsApp = "https://wa.me/18098647903?text=>>%20TICKET_PAGO%20>>%20ADJUNTANDO%20COMPROBANTE";
+                
+                lista.innerHTML = cuentasBancarias.map(b => `
+                    <div style="margin-bottom:8px; cursor:pointer;" onclick="copiarTexto('${b.numero}')">
+                        • Ahorros ${b.nombre}: <span style="color:var(--neon);">${b.numero}</span>
+                    </div>
+                `).join('') + `
+                    <div style="margin:20px 0; padding:10px; border:2px dashed var(--gold); color:var(--gold); font-size:0.7rem; border-radius:8px; text-align:center;">
+                        >> ACCIÓN REQUERIDA: ADJUNTAR COMPROBANTE DE PAGO.
+                    </div>
+                `;
+
+                btns.innerHTML = `
+                    <button class="btn-send" onclick="window.open('${linkWhatsApp}', '_blank')">[ ENVIAR CAPTURE DE PAGO ]</button>
+                    <button class="btn-close" style="margin-top:5px;" onclick="document.getElementById('modalCuentas').style.display='none'">[ CERRAR ]</button>
+                `;
+                
+                document.getElementById('modalCuentas').style.display = 'flex';
+            } else if (ingreso !== null) {
+                alert("ACCESO DENEGADO: Llave inválida.");
+            }
+        };
+
+        window.copiarTexto = (texto) => {
+            navigator.clipboard.writeText(texto).then(() => {
+                alert("Número copiado: " + texto);
+            });
+        };
+
+        window.sendWhatsApp = () => {
+            const imei = document.getElementById('imeiField').value;
+            if(imei.length >= 15) {
+                const msg = ">>%20TICKET_SOLICITUD%20>>%20IMEI:" + imei + "%20>>%20ESTADO:%20PENDIENTE";
+                window.location.href = "https://wa.me/18098647903?text=" + msg;
+            } else {
+                alert("IMEI inválido");
+            }
+        };
+
+        async function rotarProductos() {
+            const display = document.getElementById('product-display');
+            if (!display) return;
+
+            try {
+                const res = await fetch('productos.json');
+                const data = await res.json();
+
+                const sel = data.sort(() => 0.5 - Math.random()).slice(0, 3);
+                
+                display.innerHTML = sel.map(p => `
+                    <div class="product-card">
+                        <img src="${p.img}" class="product-img">
+                        <div class="product-info">${p.nombre}<br><a href="${p.link}" class="btn-amazon" target="_blank">[ VER DETALLES ]</a></div>
+                    </div>
+                `).join('');
+            } catch (e) {
+                console.log("Error cargando productos");
+            }
+        }
+        
+        rotarProductos();
+        setInterval(rotarProductos, 4000);
+    });
+
+
+</script>
+
 </body>
 </html>
