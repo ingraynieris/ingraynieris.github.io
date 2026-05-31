@@ -1,0 +1,1464 @@
+{
+    "versiculos": [
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        },
+        {
+            "texto": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia.",
+            "referencia": "Proverbios 3:5"
+        },
+        {
+            "texto": "Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os serán añadidas.",
+            "referencia": "Mateo 6:33"
+        },
+        {
+            "texto": "Instruye al niño en su camino, y aun cuando fuere viejo no se apartará de él.",
+            "referencia": "Proverbios 22:6"
+        },
+        {
+            "texto": "El Señor es mi luz y mi salvación; ¿de quién temeré?",
+            "referencia": "Salmo 27:1"
+        },
+        {
+            "texto": "Por nada estéis afanosos, sino sean conocidas vuestras peticiones delante de Dios en toda oración y ruego, con acción de gracias.",
+            "referencia": "Filipenses 4:6"
+        },
+        {
+            "texto": "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.",
+            "referencia": "Juan 3:16"
+        },
+        {
+            "texto": "Todo lo puedo en Cristo que me fortalece.",
+            "referencia": "Filipenses 4:13"
+        },
+        {
+            "texto": "Jehová es mi pastor; nada me faltará.",
+            "referencia": "Salmo 23:1"
+        },
+        {
+            "texto": "Porque yo sé los pensamientos que tengo acerca de vosotros, dice Jehová, pensamientos de paz, y no de mal, para daros el fin que esperáis.",
+            "referencia": "Jeremías 29:11"
+        },
+        {
+            "texto": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da. No se turbe vuestro corazón, ni tenga miedo.",
+            "referencia": "Juan 14:27"
+        }
+    ]
+}
