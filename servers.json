@@ -1,0 +1,8 @@
+{
+    "servers": [
+        {
+            "name": "Mi Servidor Personal",
+            "address": "https://anisette-v3-server-dvv7.onrender.com"
+        }
+    ]
+}
