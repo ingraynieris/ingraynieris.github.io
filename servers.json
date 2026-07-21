@@ -1,7 +1,7 @@
 {
     "servers": [
         {
-            "name": "Mi Servidor Personal",
+            "name": "Mi Servidor SideStore",
             "address": "https://anisette-v3-server-dvv7.onrender.com"
         }
     ]
